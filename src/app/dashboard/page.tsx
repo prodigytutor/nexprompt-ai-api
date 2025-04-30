@@ -1,4 +1,4 @@
-import { TextSpeech } from "@/components/dashboard/text-speech";
+import { PromptDashboard } from "@/components/dashboard/prompt";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
   Breadcrumb,
@@ -20,7 +20,7 @@ export default function Dashboard() {
         </Breadcrumb>
         <ThemeToggle />
       </div>
-      <TextSpeech />
+      <PromptDashboard />
     </div>
   );
 }

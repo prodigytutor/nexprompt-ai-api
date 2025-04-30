@@ -41,7 +41,7 @@ export default function Sidebar() {
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
             <div className="text-center">
-              <p className="text-lg font-semibold">John Deo</p>
+              <p className="text-lg font-semibold">David Parker</p>
               <p className="text-sm text-muted-foreground">Free Plan</p>
               <Button variant="default" size="sm" className="mt-2">
                 Upgrade
@@ -54,10 +54,16 @@ export default function Sidebar() {
           <div className=" px-8 pb-6 border-b">
             <p className="text-sm font-semibold mt-6">Features</p>
             <ul className="space-y-2 mt-2">
+            <li className="flex items-center space-x-2">
+                <PenIcon className="w-4 h-4" />
+                <Link href="/dashboard/prompts" className="text-muted-foreground">
+                  Prompt Builder
+                </Link>
+              </li>
               <li className="flex items-center space-x-2">
                 <PenIcon className="w-4 h-4" />
-                <Link href="/dashboard" className="text-muted-foreground">
-                  Text to Speech
+                <Link href="/dashboard/api" className="text-muted-foreground">
+                  API
                 </Link>
               </li>
               <li className="flex items-center space-x-2">
@@ -66,7 +72,7 @@ export default function Sidebar() {
                   href="/dashboard/voice-cloning"
                   className="text-muted-foreground"
                 >
-                  Voice Cloning
+                  Analytics
                 </Link>
               </li>
               <li className="flex items-center space-x-2">

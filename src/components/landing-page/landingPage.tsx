@@ -1,0 +1,3315 @@
+import Image from 'next/image'
+import React from 'react'
+
+type Props = {}
+
+const landingPage = () => {
+  return (
+    <div>
+        
+<div id="root">
+  <section id="hero" className="relative overflow-hidden bg-neutral-800 py-16 md:py-24">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="text-white space-y-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            Define, Test, Deploy AI Prompts in Minutes
+          </h1>
+          <p className="text-lg text-neutral-200 max-w-lg">
+            Create powerful AI prompts and instantly generate API endpoints. Test, iterate, and deploy without writing a single line of code.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="#cta" className="px-8 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-all duration-300 text-center">
+              Get Started Free
+            </a>
+            <a href="#how-it-works" className="px-8 py-3 bg-transparent border border-neutral-600 text-white rounded-md font-medium hover:bg-neutral-700 transition-all duration-300 text-center">
+              See How It Works
+            </a>
+          </div>
+          <div className="pt-6">
+            <p className="text-neutral-400 text-sm">Used by innovative teams at</p>
+            <div className="flex flex-wrap gap-6 items-center pt-3">
+              <span className="text-neutral-300 font-semibold">Microsoft</span>
+              <span className="text-neutral-300 font-semibold">Salesforce</span>
+              <span className="text-neutral-300 font-semibold">Stripe</span>
+              <span className="text-neutral-300 font-semibold">Shopify</span>
+            </div>
+          </div>
+        </div>
+        
+        <div className="relative">
+          <div className="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-700 shadow-lg">
+            <div className="p-4 bg-neutral-800 border-b border-neutral-700 flex items-center">
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 rounded-full bg-neutral-500"></div>
+                <div className="w-3 h-3 rounded-full bg-neutral-500"></div>
+                <div className="w-3 h-3 rounded-full bg-neutral-500"></div>
+              </div>
+              <div className="mx-auto text-neutral-400 text-sm">Prompt API Dashboard</div>
+            </div>
+            <div className="p-6">
+              <div className="mb-4">
+                <div className="text-neutral-400 text-sm mb-2">Define Your Prompt</div>
+                <div className="bg-neutral-700 p-3 rounded-md text-neutral-200 text-sm font-mono">
+                  You are a customer service AI. Help the user with their  issue related to . Be concise and solution-oriented.
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex justify-between mb-2">
+                  <span className="text-neutral-400 text-sm">Test Parameters</span>
+                  <span className="text-indigo-400 text-sm">Run Test</span>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-neutral-700 p-2 rounded-md">
+                    <div className="text-neutral-400 text-xs">product</div>
+                    <div className="text-neutral-200 text-sm">SmartHome Hub</div>
+                  </div>
+                  <div className="bg-neutral-700 p-2 rounded-md">
+                    <div className="text-neutral-400 text-xs">issue_type</div>
+                    <div className="text-neutral-200 text-sm">connectivity</div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-between p-3 bg-indigo-900 bg-opacity-30 rounded-md border border-indigo-700">
+                <div className="text-indigo-300 text-sm">API Endpoint Generated</div>
+                <div className="text-indigo-300 text-sm font-mono">/api/v1/prompt/cs-helper</div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="absolute -bottom-6 -right-6 -z-10 w-64 h-64 bg-indigo-600 bg-opacity-20 rounded-full blur-3xl"></div>
+          <div className="absolute -top-6 -left-6 -z-10 w-64 h-64 bg-purple-600 bg-opacity-20 rounded-full blur-3xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div id="root">
+  <section id="features" className="py-20 bg-white">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Features</h2>
+        <p className="text-neutral-600 max-w-2xl mx-auto">Everything you need to create, test, and deploy AI prompts without writing a single line of code.</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+   
+        <div className="bg-neutral-50 rounded-lg p-6 border border-neutral-200 hover:shadow-md transition-all duration-300">
+          <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Visual Prompt Builder</h3>
+          <p className="text-neutral-600 mb-4">Create complex AI prompts with our intuitive drag-and-drop interface. No coding experience required.</p>
+          <ul className="space-y-2">
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">Template variables support</span>
+            </li>
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">Pre-built prompt templates</span>
+            </li>
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">Version history tracking</span>
+            </li>
+          </ul>
+        </div>
+
+     
+        <div className="bg-neutral-50 rounded-lg p-6 border border-neutral-200 hover:shadow-md transition-all duration-300">
+          <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Real-time Testing</h3>
+          <p className="text-neutral-600 mb-4">Test your prompts instantly with different parameters. See how changes affect results in real-time.</p>
+          <ul className="space-y-2">
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">A/B testing functionality</span>
+            </li>
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">Parameter customization</span>
+            </li>
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">Response quality metrics</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="bg-neutral-50 rounded-lg p-6 border border-neutral-200 hover:shadow-md transition-all duration-300">
+          <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            </svg>
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Instant API Endpoints</h3>
+          <p className="text-neutral-600 mb-4">Every prompt automatically gets its own API endpoint. Integrate with your application in seconds.</p>
+          <ul className="space-y-2">
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">Automatic RESTful endpoints</span>
+            </li>
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">Authentication & rate limiting</span>
+            </li>
+            <li className="flex items-start">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span className="text-sm text-neutral-600">Custom domain support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+  
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+    
+        <div className="bg-neutral-50 rounded-lg p-6 border border-neutral-200 hover:shadow-md transition-all duration-300 flex">
+          <div className="mr-6">
+            <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Analytics Dashboard</h3>
+            <p className="text-neutral-600 mb-2">Monitor usage, performance, and cost metrics. Understand how your prompts are being used in production.</p>
+            <ul className="space-y-1">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-sm text-neutral-600">Detailed usage statistics</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-sm text-neutral-600">Cost optimization recommendations</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+   
+        <div className="bg-neutral-50 rounded-lg p-6 border border-neutral-200 hover:shadow-md transition-all duration-300 flex">
+          <div className="mr-6">
+            <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Enterprise Security</h3>
+            <p className="text-neutral-600 mb-2">SOC 2 compliant with encryption at rest and in transit. Role-based access control for team management.</p>
+            <ul className="space-y-1">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-sm text-neutral-600">End-to-end encryption</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-sm text-neutral-600">RBAC team management</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+     
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 className="text-2xl font-bold mb-4">Design, Test, Deploy</h3>
+          <p className="text-neutral-600 mb-6">Our platform streamlines the entire AI prompt engineering workflow, from ideation to production deployment.</p>
+          
+          <div className="space-y-4">
+            <div className="flex items-start">
+              <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <span className="text-indigo-600 font-semibold">1</span>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-1">Design your prompt</h4>
+                <p className="text-neutral-600 text-sm">Create your prompt using our visual editor. Add variables, conditions, and examples.</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start">
+              <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <span className="text-indigo-600 font-semibold">2</span>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-1">Test with real inputs</h4>
+                <p className="text-neutral-600 text-sm">See real-time outputs as you modify your prompt. Refine until perfect.</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start">
+              <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <span className="text-indigo-600 font-semibold">3</span>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-1">Deploy to production</h4>
+                <p className="text-neutral-600 text-sm">Click deploy to instantly create a scalable API endpoint for your application.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-8">
+            <a href="#cta" className="inline-flex items-center text-indigo-600 font-medium hover:text-indigo-800 transition-colors">
+              Try it for free
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div className="rounded-lg border border-neutral-200 overflow-hidden bg-neutral-50 p-1">
+          <Image 
+            src="https://images.unsplash.com/photo-1520013817300-1f4c1cb245ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8bWluaW1hbGlzdCUyNTIwaW50ZXJmYWNlJTI1MjBzaG93aW5nJTI1MjBBSSUyNTIwcHJvbXB0JTI1MjB0ZXN0aW5nJTI1MjBkYXNoYm9hcmQlMjUyMHdpdGglMjUyMEFQSSUyNTIwZW5kcG9pbnQlMjUyMGNvbm5lY3Rpb24lMjUyMHByb2Zlc3Npb25hbCUyNTIwc3R1ZGlvJTI1MjBwaG90b2dyYXBoeSUyNTIwY2xlYW4lMjUyMGJsdWUlMjUyMGJhY2tncm91bmR8ZW58MHwwfHxibHVlfDE3NDQ3NDI1NzJ8MA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+            alt="Yellow paper boat representing simplicity in design"
+            className="w-full h-auto rounded object-cover"
+            width="800"
+            height="600"
+          />
+          <p className="text-xs text-neutral-500 mt-2 text-right">Photo by Alex Padurariu</p>
+        </div>
+      </div>
+
+   
+      <div className="mt-20 bg-indigo-50 rounded-xl p-8 text-center">
+        <h3 className="text-2xl font-bold mb-4">Ready to supercharge your AI workflows?</h3>
+        <p className="text-neutral-700 max-w-2xl mx-auto mb-6">Join thousands of companies using our platform to build powerful AI features with simple prompts.</p>
+        <a href="#cta" className="inline-block px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors">
+          Start Building Now
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="root">
+  <section id="how-it-works" className="py-20 bg-neutral-50">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+        <p className="text-neutral-600 max-w-2xl mx-auto">From prompt creation to API deployment in three simple steps.</p>
+      </div>
+
+    
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      
+        <div className="relative">
+          <div className="bg-white rounded-lg p-8 shadow-sm border border-neutral-200 h-full">
+            <div className="w-14 h-14 bg-indigo-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-6">1</div>
+            <h3 className="text-xl font-semibold mb-4">Define Your Prompt</h3>
+            <p className="text-neutral-600 mb-4">Create your AI prompt using our intuitive editor. Add variables that can be dynamically populated when the API is called.</p>
+            <ul className="space-y-2 text-neutral-600">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Drag-and-drop prompt builder</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Template library for quick starts</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Variable placeholders support</span>
+              </li>
+            </ul>
+          </div>
+          
+         
+          <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 w-8 h-1 bg-indigo-200"></div>
+        </div>
+
+    
+        <div className="relative">
+          <div className="bg-white rounded-lg p-8 shadow-sm border border-neutral-200 h-full">
+            <div className="w-14 h-14 bg-indigo-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-6">2</div>
+            <h3 className="text-xl font-semibold mb-4">Test & Refine</h3>
+            <p className="text-neutral-600 mb-4">Test your prompt with real parameters. See the AI response in real-time and refine your prompt for optimal results.</p>
+            <ul className="space-y-2 text-neutral-600">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Real-time preview</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>A/B testing capability</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Performance metrics</span>
+              </li>
+            </ul>
+          </div>
+          
+     
+          <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 w-8 h-1 bg-indigo-200"></div>
+        </div>
+
+   
+        <div>
+          <div className="bg-white rounded-lg p-8 shadow-sm border border-neutral-200 h-full">
+            <div className="w-14 h-14 bg-indigo-600 rounded-full flex items-center justify-center text-white text-xl font-bold mb-6">3</div>
+            <h3 className="text-xl font-semibold mb-4">Deploy API Endpoint</h3>
+            <p className="text-neutral-600 mb-4">With one click, generate a secure API endpoint for your prompt that can be integrated into any application.</p>
+            <ul className="space-y-2 text-neutral-600">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Instant API generation</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Secure authentication</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Detailed usage analytics</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="order-2 lg:order-1">
+          <h3 className="text-2xl font-bold mb-6">Effortless Workflow</h3>
+          <p className="text-neutral-600 mb-8">Our platform handles the complexity, so you can focus on crafting the perfect AI prompts for your applications.</p>
+          
+          <div className="space-y-6">
+            <div className="flex">
+              <div className="mr-4 flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-1">Enterprise-Grade Security</h4>
+                <p className="text-neutral-600 text-sm">All prompts and responses are encrypted. Role-based access control for team collaboration.</p>
+              </div>
+            </div>
+            
+            <div className="flex">
+              <div className="mr-4 flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-1">Rapid Implementation</h4>
+                <p className="text-neutral-600 text-sm">Go from idea to working API in minutes, not days. No complex setup or infrastructure required.</p>
+              </div>
+            </div>
+            
+            <div className="flex">
+              <div className="mr-4 flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-1">Comprehensive Analytics</h4>
+                <p className="text-neutral-600 text-sm">Track usage, performance, and costs. Optimize your prompts based on real-world data.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-8">
+            <button id="show-demo-video" className="flex items-center text-indigo-600 font-medium hover:text-indigo-800 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Watch full demo
+            </button>
+          </div>
+        </div>
+        
+        <div className="order-1 lg:order-2 bg-white p-1 rounded-lg border border-neutral-200 shadow-sm">
+          <img 
+            src="https://images.unsplash.com/photo-1484981138541-3d074aa97716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTI1MjBkZXZlbG9wZXIlMjUyMHRlc3RpbmclMjUyMEFJJTI1MjBwcm9tcHRzJTI1MjBpbnRlcmZhY2UlMjUyMGNsZWFuJTI1MjB3b3Jrc3BhY2UlMjUyMG1vZGVybiUyNTIwdGVjaCUyNTIwbWluaW1hbCUyNTIwZGVzaWdufGVufDB8MHx8fDE3NDQ3NDI2NDF8MA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+            alt="Professional workspace showing clean design for AI prompt testing"
+            onerror="this.onerror=null; this.src='https://placehold.co/600x400'"
+            className="w-full h-auto rounded object-cover"
+            width="800"
+            height="600"
+          >
+          <p className="text-xs text-neutral-500 mt-2 text-right">Photo by Brooke Lark</p>
+        </div>
+      </div>
+
+    
+      <div id="demo-modal" className="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div id="modal-backdrop" className="absolute inset-0 bg-black bg-opacity-75"></div>
+        <div className="relative bg-white rounded-lg max-w-4xl w-full mx-4 overflow-hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <div className="flex justify-between items-center p-4 border-b border-neutral-200">
+            <h3 id="modal-title" className="text-lg font-semibold">Product Demo Video</h3>
+            <button id="close-modal" className="text-neutral-500 hover:text-neutral-700 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div className="p-4">
+            <div className="aspect-w-16 aspect-h-9 bg-neutral-100 rounded flex items-center justify-center">
+              <p className="text-neutral-500">Demo video would be embedded here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Modal functionality
+    const modal = document.getElementById('demo-modal');
+    const showDemoButton = document.getElementById('show-demo-video');
+    const closeModalButton = document.getElementById('close-modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    
+    // Track the trigger element
+    let lastFocusedElement = null;
+    
+    // Function to open modal
+    function openModal() {
+      // Save last focused element
+      lastFocusedElement = document.activeElement;
+      
+      // Show modal
+      modal.classList.remove('hidden');
+      
+      // Prevent page scrolling
+      document.body.style.overflow = 'hidden';
+      
+      // Set focus to close button
+      closeModalButton.focus();
+      
+      // Set ARIA attributes
+      modal.setAttribute('aria-hidden', 'false');
+    }
+    
+    // Function to close modal
+    function closeModal() {
+      // Hide modal
+      modal.classList.add('hidden');
+      
+      // Re-enable page scrolling
+      document.body.style.overflow = '';
+      
+      // Return focus to button that opened modal
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+      
+      // Set ARIA attributes
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    
+    // Event listeners
+    showDemoButton.addEventListener('click', openModal);
+    closeModalButton.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+    
+    // Close on ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+    
+    // Focus trap inside modal
+    modal.addEventListener('keydown', function(e) {
+      if (e.key === 'Tab') {
+        // Get all focusable elements in modal
+        const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        
+        // Trap focus in modal
+        if (e.shiftKey) {
+          if (document.activeElement === firstElement) {
+            lastElement.focus();
+            e.preventDefault();
+          }
+        } else {
+          if (document.activeElement === lastElement) {
+            firstElement.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    });
+  </script>
+</div>
+
+
+<div id="root">
+  <section id="use-cases" className="py-20 bg-white">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Use Cases</h2>
+        <p className="text-neutral-600 max-w-2xl mx-auto">Discover how organizations across industries leverage our platform to build intelligent applications.</p>
+      </div>
+
+   
+      <div className="mb-8">
+        <div className="flex flex-wrap justify-center border-b border-neutral-200">
+          <button id="tab-customer-service" className="text-indigo-600 border-b-2 border-indigo-600 px-4 py-2 font-medium focus:outline-none" aria-selected="true" role="tab" aria-controls="panel-customer-service">
+            Customer Service
+          </button>
+          <button id="tab-content" className="text-neutral-500 hover:text-neutral-900 px-4 py-2 font-medium focus:outline-none" aria-selected="false" role="tab" aria-controls="panel-content">
+            Content Creation
+          </button>
+          <button id="tab-data" className="text-neutral-500 hover:text-neutral-900 px-4 py-2 font-medium focus:outline-none" aria-selected="false" role="tab" aria-controls="panel-data">
+            Data Analysis
+          </button>
+          <button id="tab-education" className="text-neutral-500 hover:text-neutral-900 px-4 py-2 font-medium focus:outline-none" aria-selected="false" role="tab" aria-controls="panel-education">
+            Education
+          </button>
+        </div>
+      </div>
+
+   
+      <div className="tab-panels mb-12">
+      
+        <div id="panel-customer-service" className="tab-panel block" role="tabpanel" aria-labelledby="tab-customer-service">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-2xl font-bold mb-4">Enhance Customer Support</h3>
+              <p className="text-neutral-600 mb-6">Deploy intelligent chatbots that can handle complex customer inquiries with contextual understanding and personalized responses.</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">24/7 Availability</h4>
+                    <p className="text-neutral-600 text-sm">Provide immediate responses to customer inquiries, reducing wait times and improving satisfaction.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Contextual Understanding</h4>
+                    <p className="text-neutral-600 text-sm">AI prompts designed to understand customer context, history, and previous interactions.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Human Handoff</h4>
+                    <p className="text-neutral-600 text-sm">Intelligent escalation to human agents when needed, with complete context transfer.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
+                <p className="text-sm italic text-neutral-600">"We reduced our customer response time by 73% and increased satisfaction scores by implementing PromptAPI's intelligent chatbot solution."</p>
+                <div className="mt-3 flex items-center">
+                  <div className="w-8 h-8 rounded-full bg-neutral-300 flex items-center justify-center text-xs font-medium">JD</div>
+                  <div className="ml-3">
+                    <p className="text-sm font-semibold">Jane Doe</p>
+                    <p className="text-xs text-neutral-500">Customer Success, Fortune 500 Retailer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="order-1 lg:order-2">
+              <div className="bg-white rounded-lg border border-neutral-200 p-6 shadow-sm">
+                <div className="mb-4 pb-4 border-b border-neutral-100">
+                  <h4 className="text-lg font-medium mb-2">Customer Service Prompt Example</h4>
+                  <div className="bg-neutral-50 p-3 rounded-md text-sm font-mono text-neutral-700 overflow-x-auto">
+                    You are a customer support agent for . The customer has a question about  and specifically about . First acknowledge their issue, then provide a helpful solution based on our product knowledge. If you don't have enough information, ask for specific details that would help you assist them better.
+                  </div>
+                </div>
+                
+                <div className="mb-4">
+                  <h5 className="text-sm font-medium mb-2">API Integration Example:</h5>
+                  <div className="bg-neutral-50 p-3 rounded-md text-xs font-mono text-neutral-700 overflow-x-auto">
+                    <code>
+                      fetch('https://api.promptapi.com/v1/cs-helper', {<br>
+                      &nbsp;&nbsp;method: 'POST',<br>
+                      &nbsp;&nbsp;headers: {<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;'Content-Type': 'application/json',<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;'Authorization': 'Bearer YOUR_API_KEY'<br>
+                      &nbsp;&nbsp;},<br>
+                      &nbsp;&nbsp;body: JSON.stringify({<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;company_name: 'Acme Inc',<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;product_name: 'Smart Home Hub',<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;issue_type: 'connectivity',<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;customer_message: 'My hub keeps disconnecting'<br>
+                      &nbsp;&nbsp;})<br>
+                      })
+                    </code>
+                  </div>
+                </div>
+                
+                <button id="cs-demo-button" className="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md font-medium transition-colors">
+                  See Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+        <div id="panel-content" className="tab-panel hidden" role="tabpanel" aria-labelledby="tab-content">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Streamline Content Creation</h3>
+              <p className="text-neutral-600 mb-6">Create customized content generation systems that can produce blog posts, product descriptions, social media copy and more with your brand voice.</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Brand Voice Consistency</h4>
+                    <p className="text-neutral-600 text-sm">Maintain consistent tone and messaging across all content channels.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Content Scaling</h4>
+                    <p className="text-neutral-600 text-sm">Produce high volumes of quality content without expanding your team.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Multilingual Support</h4>
+                    <p className="text-neutral-600 text-sm">Create content in multiple languages from a single prompt template.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
+                <p className="text-sm italic text-neutral-600">"Our marketing team can now generate consistent product descriptions across our entire catalog in minutes instead of days."</p>
+                <div className="mt-3 flex items-center">
+                  <div className="w-8 h-8 rounded-full bg-neutral-300 flex items-center justify-center text-xs font-medium">MJ</div>
+                  <div className="ml-3">
+                    <p className="text-sm font-semibold">Michael Johnson</p>
+                    <p className="text-xs text-neutral-500">Marketing Director, E-commerce Platform</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1484981138541-3d074aa97716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTI1MjBkZXZlbG9wZXIlMjUyMHRlc3RpbmclMjUyMEFJJTI1MjBwcm9tcHRzJTI1MjBvbiUyNTIwbGFwdG9wJTI1MjBpbnRlcmZhY2UlMjUyMGNsZWFuJTI1MjB3b3Jrc3BhY2UlMjUyMG1vZGVybiUyNTIwdGVjaCUyNTIwZW52aXJvbm1lbnR8ZW58MHwwfHx8MTc0NDc0MjcxMHww&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                alt="Professional workspace showing content creation"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x400'"
+                className="w-full h-auto rounded-md mb-6"
+                width="800"
+                height="600"
+              >
+              <p className="text-xs text-neutral-500 mb-4 text-right">Photo by Brooke Lark</p>
+              
+              <div className="mb-4 pb-4 border-b border-neutral-100">
+                <h4 className="text-lg font-medium mb-2">Content Generation Example</h4>
+                <div className="bg-neutral-50 p-3 rounded-md text-sm font-mono text-neutral-700 overflow-x-auto">
+                  Create a  about  in a  tone. Include  and optimize for .
+                </div>
+              </div>
+              
+              <button id="content-demo-button" className="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md font-medium transition-colors">
+                See Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        
+     
+        <div id="panel-data" className="tab-panel hidden" role="tabpanel" aria-labelledby="tab-data">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Transform Data Analysis</h3>
+              <p className="text-neutral-600 mb-6">Build AI tools that help analyze, summarize, and extract insights from complex datasets, reports, and documents.</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Automated Reports</h4>
+                    <p className="text-neutral-600 text-sm">Convert raw data into polished, actionable reports in seconds.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Pattern Recognition</h4>
+                    <p className="text-neutral-600 text-sm">Identify trends and anomalies in your data that would otherwise go unnoticed.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Custom Visualizations</h4>
+                    <p className="text-neutral-600 text-sm">Generate descriptions of what visualizations would best represent your data.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
+                <p className="text-sm italic text-neutral-600">"PromptAPI has revolutionized how our analysts process quarterly reports. What took days now takes minutes."</p>
+                <div className="mt-3 flex items-center">
+                  <div className="w-8 h-8 rounded-full bg-neutral-300 flex items-center justify-center text-xs font-medium">SL</div>
+                  <div className="ml-3">
+                    <p className="text-sm font-semibold">Sarah Lee</p>
+                    <p className="text-xs text-neutral-500">Data Science Lead, Financial Services</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1425421669292-0c3da3b8f529?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8cHJvZmVzc2lvbmFsJTI1MjBkZXZlbG9wZXIlMjUyMHRlc3RpbmclMjUyMEFJJTI1MjBwcm9tcHRzJTI1MjBvbiUyNTIwbGFwdG9wJTI1MjBpbnRlcmZhY2UlMjUyMGNsZWFuJTI1MjB3b3Jrc3BhY2UlMjUyMG1vZGVybiUyNTIwdGVjaCUyNTIwZW52aXJvbm1lbnR8ZW58MHwwfHx8MTc0NDc0MjcxMHww&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                alt="Professional in suit representing data analysis work"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x400'"
+                className="w-full h-auto rounded-md mb-6"
+                width="800"
+                height="600"
+              >
+              <p className="text-xs text-neutral-500 mb-4 text-right">Photo by Ben Rosett</p>
+              
+              <div className="mb-4 pb-4 border-b border-neutral-100">
+                <h4 className="text-lg font-medium mb-2">Data Analysis Prompt Example</h4>
+                <div className="bg-neutral-50 p-3 rounded-md text-sm font-mono text-neutral-700 overflow-x-auto">
+                  Analyze the following  data and provide a summary of key trends, anomalies, and actionable insights. Focus on  and highlight any significant changes compared to .
+                </div>
+              </div>
+              
+              <button id="data-demo-button" className="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md font-medium transition-colors">
+                See Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Education Panel -->
+        <div id="panel-education" className="tab-panel hidden" role="tabpanel" aria-labelledby="tab-education">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Revolutionize Education</h3>
+              <p className="text-neutral-600 mb-6">Create personalized learning experiences, tutoring systems, and educational content generators to enhance learning outcomes.</p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Personalized Tutoring</h4>
+                    <p className="text-neutral-600 text-sm">Create AI tutors that adapt to each student's learning style and pace.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Assignment Generation</h4>
+                    <p className="text-neutral-600 text-sm">Quickly create customized assignments, quizzes, and learning materials.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h4 className="font-semibold">Concept Explanation</h4>
+                    <p className="text-neutral-600 text-sm">Break down complex topics in ways that match students' current understanding.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-4 bg-neutral-50 rounded-lg border border-neutral-200">
+                <p className="text-sm italic text-neutral-600">"Our online learning platform saw a 40% increase in student engagement after implementing PromptAPI's tutoring system."</p>
+                <div className="mt-3 flex items-center">
+                  <div className="w-8 h-8 rounded-full bg-neutral-300 flex items-center justify-center text-xs font-medium">DP</div>
+                  <div className="ml-3">
+                    <p className="text-sm font-semibold">Dr. Patel</p>
+                    <p className="text-xs text-neutral-500">Education Technology Director</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg border border-neutral-200 p-6 shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8cHJvZmVzc2lvbmFsJTI1MjBkZXZlbG9wZXIlMjUyMHRlc3RpbmclMjUyMEFJJTI1MjBwcm9tcHRzJTI1MjBvbiUyNTIwbGFwdG9wJTI1MjBpbnRlcmZhY2UlMjUyMGNsZWFuJTI1MjB3b3Jrc3BhY2UlMjUyMG1vZGVybiUyNTIwdGVjaCUyNTIwZW52aXJvbm1lbnR8ZW58MHwwfHx8MTc0NDc0MjcxMHww&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                alt="Professional workspace representing an educational environment"
+                onerror="this.onerror=null; this.src='https://placehold.co/600x400'"
+                className="w-full h-auto rounded-md mb-6"
+                width="800"
+                height="600"
+              >
+              <p className="text-xs text-neutral-500 mb-4 text-right">Photo by Hunters Race</p>
+              
+              <div className="mb-4 pb-4 border-b border-neutral-100">
+                <h4 className="text-lg font-medium mb-2">Education Prompt Example</h4>
+                <div className="bg-neutral-50 p-3 rounded-md text-sm font-mono text-neutral-700 overflow-x-auto">
+                  You are a helpful tutor explaining  to a  student. Explain the concept of  in simple terms. Use analogies appropriate for their age. Include  examples and  practice questions.
+                </div>
+              </div>
+              
+              <button id="education-demo-button" className="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md font-medium transition-colors">
+                See Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- CTA -->
+      <div className="text-center mt-16">
+        <h3 className="text-2xl font-bold mb-4">Ready to Build Your AI Solution?</h3>
+        <p className="text-neutral-600 max-w-2xl mx-auto mb-8">Join thousands of companies already enhancing their applications with our AI prompt platform.</p>
+        <a href="#cta" className="inline-block px-8 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors">
+          Start Building for Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="demo-modal" className="fixed inset-0 z-50 overflow-y-auto hidden" aria-modal="true" aria-hidden="true">
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <!-- Backdrop -->
+      <div id="modal-backdrop" className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+      
+     
+      <div className="relative bg-white rounded-lg max-w-3xl w-full mx-auto shadow-xl overflow-hidden">
+        <div className="flex justify-between items-center p-4 border-b border-neutral-200">
+          <h3 id="modal-title" className="text-lg font-semibold">Live Demo</h3>
+          <button id="close-modal" className="text-neutral-500 hover:text-neutral-700 focus:outline-none" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        
+        <div className="p-6">
+          <div id="demo-content" className="min-h-[400px] flex items-center justify-center">
+            <p className="text-neutral-500">Demo content will load here based on selected use case.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab functionality
+    const tabs = document.querySelectorAll('[role="tab"]');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Deselect all tabs
+        tabs.forEach(tab => {
+          tab.setAttribute('aria-selected', 'false');
+          tab.classList.remove('text-indigo-600', 'border-b-2', 'border-indigo-600');
+          tab.classList.add('text-neutral-500');
+        });
+        
+        // Select clicked tab
+        tab.setAttribute('aria-selected', 'true');
+        tab.classList.remove('text-neutral-500');
+        tab.classList.add('text-indigo-600', 'border-b-2', 'border-indigo-600');
+        
+        // Hide all panels
+        tabPanels.forEach(panel => {
+          panel.classList.add('hidden');
+        });
+        
+        // Show selected panel
+        const panelId = tab.getAttribute('aria-controls');
+        document.getElementById(panelId).classList.remove('hidden');
+      });
+    });
+    
+    // Modal functionality
+    const modal = document.getElementById('demo-modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const closeModalButton = document.getElementById('close-modal');
+    const demoButtons = [
+      document.getElementById('cs-demo-button'),
+      document.getElementById('content-demo-button'),
+      document.getElementById('data-demo-button'),
+      document.getElementById('education-demo-button')
+    ];
+    const demoContent = document.getElementById('demo-content');
+    const modalTitle = document.getElementById('modal-title');
+    
+    // Last focused element before modal opened
+    let lastFocusedElement = null;
+    
+    // Function to open modal
+    function openModal(title, content) {
+      // Store last focused element
+      lastFocusedElement = document.activeElement;
+      
+      // Update modal content
+      modalTitle.textContent = title;
+      demoContent.innerHTML = content;
+      
+      // Show modal
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      
+      // Set ARIA attributes
+      modal.setAttribute('aria-hidden', 'false');
+      
+      // Focus close button
+      closeModalButton.focus();
+    }
+    
+    // Function to close modal
+    function closeModal() {
+      // Hide modal
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+      
+      // Set ARIA attributes
+      modal.setAttribute('aria-hidden', 'true');
+      
+      // Return focus
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+    }
+    
+    // Demo content for each button
+    const demoContents = {
+      'cs-demo-button': {
+        title: 'Customer Service Demo',
+        content: `
+          <div className="space-y-4">
+            <div className="p-4 bg-neutral-50 rounded-lg">
+              <h4 className="font-medium mb-2">Prompt Template:</h4>
+              <div className="bg-white p-3 rounded border border-neutral-200 text-sm font-mono">
+                You are a customer support agent for . The customer has a question about  and specifically about .
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-medium mb-2">Input Parameters:</h4>
+                <div className="space-y-3">
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Company Name:</label>
+                    <input type="text" value="TechGadgets Inc" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Product Name:</label>
+                    <input type="text" value="Smart Home Hub" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Issue Type:</label>
+                    <input type="text" value="WiFi connectivity" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-medium mb-2">AI Response:</h4>
+                <div className="p-3 bg-indigo-50 border border-indigo-200 rounded h-[200px] overflow-y-auto text-sm">
+                  I understand you're experiencing WiFi connectivity issues with your TechGadgets Inc Smart Home Hub. This can be frustrating, but I can help you resolve this. First, let's try power cycling your device by unplugging it for 30 seconds, then plugging it back in. If that doesn't work, please check if your WiFi router is functioning properly and that the Hub is within range. You can also try resetting your network settings in the Hub's configuration menu. Would you like me to walk you through any of these steps in more detail?
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center pt-4">
+              <p className="text-sm text-neutral-500">This is just a simulation. In a real integration, your application would make API calls to our service.</p>
+            </div>
+          </div>
+        `
+      },
+      'content-demo-button': {
+        title: 'Content Creation Demo',
+        content: `
+          <div className="space-y-4">
+            <div className="p-4 bg-neutral-50 rounded-lg">
+              <h4 className="font-medium mb-2">Prompt Template:</h4>
+              <div className="bg-white p-3 rounded border border-neutral-200 text-sm font-mono">
+                Create a  about  in a  tone. Include  and optimize for .
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-medium mb-2">Input Parameters:</h4>
+                <div className="space-y-3">
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Content Type:</label>
+                    <input type="text" value="product description" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Topic:</label>
+                    <input type="text" value="wireless earbuds" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Tone:</label>
+                    <input type="text" value="professional yet approachable" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-medium mb-2">AI Response:</h4>
+                <div className="p-3 bg-indigo-50 border border-indigo-200 rounded h-[200px] overflow-y-auto text-sm">
+                  <strong>SoundPlus Pro Wireless Earbuds: Freedom in Every Note</strong><br><br>
+                  Experience audio excellence with our SoundPlus Pro Wireless Earbuds, engineered for those who demand superior sound without compromises. These lightweight, ergonomically designed earbuds deliver crystal-clear audio while maintaining exceptional comfort for all-day wear.<br><br>
+                  With industry-leading battery life of up to 8 hours on a single charge and an additional 24 hours with the compact charging case, your music stays with you throughout your day. The advanced Bluetooth 5.2 technology ensures stable connections up to 30 feet, eliminating frustrating dropouts during important calls or your favorite tracks.
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center pt-4">
+              <p className="text-sm text-neutral-500">This is just a simulation. In a real integration, your application would make API calls to our service.</p>
+            </div>
+          </div>
+        `
+      },
+      'data-demo-button': {
+        title: 'Data Analysis Demo',
+        content: `
+          <div className="space-y-4">
+            <div className="p-4 bg-neutral-50 rounded-lg">
+              <h4 className="font-medium mb-2">Prompt Template:</h4>
+              <div className="bg-white p-3 rounded border border-neutral-200 text-sm font-mono">
+                Analyze the following  data and provide a summary of key trends, anomalies, and actionable insights. Focus on  and highlight any significant changes compared to .
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-medium mb-2">Input Parameters:</h4>
+                <div className="space-y-3">
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Data Type:</label>
+                    <input type="text" value="quarterly sales" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Metrics:</label>
+                    <input type="text" value="conversion rates and customer acquisition cost" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Previous Period:</label>
+                    <input type="text" value="Q1 2023" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-medium mb-2">AI Response:</h4>
+                <div className="p-3 bg-indigo-50 border border-indigo-200 rounded h-[200px] overflow-y-auto text-sm">
+                  <strong>Q2 2023 Sales Analysis Summary</strong><br><br>
+                  <u>Key Trends:</u><br>
+                  • Conversion rates increased by 12.8% compared to Q1 2023, reaching 3.2%<br>
+                  • Customer Acquisition Cost (CAC) decreased from $42.50 to $36.75, a 13.5% improvement<br>
+                  • Mobile conversion rate outperformed desktop by 8% for the first time<br><br>
+                  
+                  <u>Anomalies:</u><br>
+                  • Unusual spike in conversion rates during weekday evenings (7-9pm), 32% higher than typical patterns<br>
+                  • Northeast region showed 22% lower CAC despite minimal marketing budget changes<br><br>
+                  
+                  <u>Actionable Insights:</u><br>
+                  1. Reallocate marketing budget to optimize for weekday evening campaigns<br>
+                  2. Investigate and replicate Northeast region's customer acquisition strategies<br>
+                  3. Prioritize mobile experience optimizations to capitalize on higher conversion trends
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center pt-4">
+              <p className="text-sm text-neutral-500">This is just a simulation. In a real integration, your application would make API calls to our service.</p>
+            </div>
+          </div>
+        `
+      },
+      'education-demo-button': {
+        title: 'Education Demo',
+        content: `
+          <div className="space-y-4">
+            <div className="p-4 bg-neutral-50 rounded-lg">
+              <h4 className="font-medium mb-2">Prompt Template:</h4>
+              <div className="bg-white p-3 rounded border border-neutral-200 text-sm font-mono">
+                You are a helpful tutor explaining  to a  student. Explain the concept of  in simple terms. Use analogies appropriate for their age. Include  examples and  practice questions.
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <h4 className="font-medium mb-2">Input Parameters:</h4>
+                <div className="space-y-3">
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Subject:</label>
+                    <input type="text" value="Math" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Grade Level:</label>
+                    <input type="text" value="5th grade" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                  <div className="flex flex-col">
+                    <label className="text-sm text-neutral-600 mb-1">Concept:</label>
+                    <input type="text" value="fractions" className="p-2 border border-neutral-300 rounded text-sm" disabled>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <h4 className="font-medium mb-2">AI Response:</h4>
+                <div className="p-3 bg-indigo-50 border border-indigo-200 rounded h-[200px] overflow-y-auto text-sm">
+                  <strong>Understanding Fractions</strong><br><br>
+                  
+                  Hi there! Today we're going to learn about fractions. Think of a fraction like a slice of pizza. When you have a whole pizza and cut it into 8 equal slices, each slice is 1/8 of the whole pizza. The bottom number (8) tells you how many equal parts the whole is divided into, and the top number (1) tells you how many of those parts you have.<br><br>
+                  
+                  <u>Example 1:</u> If you eat 3 slices of an 8-slice pizza, you've eaten 3/8 of the pizza.<br><br>
+                  
+                  <u>Example 2:</u> If you've filled half your water bottle, you've filled 1/2 of it. Half means 1 out of 2 equal parts.<br><br>
+                  
+                  <u>Practice Questions:</u><br>
+                  1. If you have 12 colored pencils and 4 of them are blue, what fraction of the pencils are blue?<br>
+                  2. If a chocolate bar has 10 squares and you eat 6 squares, what fraction of the chocolate bar did you eat?
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-center pt-4">
+              <p className="text-sm text-neutral-500">This is just a simulation. In a real integration, your application would make API calls to our service.</p>
+            </div>
+          </div>
+        `
+      }
+    };
+    
+    // Add event listeners to demo buttons
+    demoButtons.forEach(button => {
+      if (button) {
+        button.addEventListener('click', () => {
+          const content = demoContents[button.id];
+          if (content) {
+            openModal(content.title, content.content);
+          }
+        });
+      }
+    });
+    
+    // Close modal event listeners
+    closeModalButton.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+    
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+    
+    // Focus trap in modal
+    modal.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') {
+        const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        
+        if (e.shiftKey) {
+          if (document.activeElement === firstElement) {
+            lastElement.focus();
+            e.preventDefault();
+          }
+        } else {
+          if (document.activeElement === lastElement) {
+            firstElement.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    });
+  </script>
+</div>
+
+</element><element id="3d922600-216b-422f-9361-f39cc36ded6c" data-section-id="3d922600-216b-422f-9361-f39cc36ded6c">
+
+<div id="root">
+  <section id="pricing" className="py-20 bg-neutral-50">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Pricing</h2>
+        <p className="text-neutral-600 max-w-2xl mx-auto">Choose the plan that's right for your needs, from individual developers to enterprise teams.</p>
+      </div>
+
+     
+      <div className="flex justify-center items-center mb-12">
+        <span id="monthly-label" className="text-sm font-medium text-neutral-900">Monthly</span>
+        <div className="relative mx-3">
+          <input type="checkbox" id="pricing-toggle" className="sr-only" aria-label="Toggle between monthly and annual pricing">
+          <div className="block bg-neutral-200 w-14 h-8 rounded-full"></div>
+          <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+        </div>
+        <span id="annual-label" className="text-sm font-medium text-neutral-400">Annual <span className="text-xs text-indigo-600 ml-1">Save 20%</span></span>
+      </div>
+
+    
+      <div id="pricing-cards" className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+       
+        <div className="bg-white rounded-xl border border-neutral-200 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md">
+          <div className="p-6 md:p-8">
+            <h3 className="text-xl font-bold mb-2">Starter</h3>
+            <p className="text-neutral-600 text-sm mb-4">Perfect for individual developers and prototyping.</p>
+            
+            <div className="monthly-price">
+              <div className="flex items-end mb-1">
+                <span className="text-4xl font-bold">$29</span>
+                <span className="text-neutral-500 ml-1">/month</span>
+              </div>
+              <p className="text-xs text-neutral-500 mb-6">Billed monthly</p>
+            </div>
+            
+            <div className="annual-price hidden">
+              <div className="flex items-end mb-1">
+                <span className="text-4xl font-bold">$23</span>
+                <span className="text-neutral-500 ml-1">/month</span>
+              </div>
+              <p className="text-xs text-neutral-500 mb-6">Billed annually ($276/year)</p>
+            </div>
+            
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">5 Active Prompts</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">10,000 API calls/month</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Basic Analytics</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Standard Support</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Public API Endpoints</span>
+              </li>
+            </ul>
+            
+            <a href="#cta" className="block text-center py-3 px-4 rounded-md border border-indigo-600 text-indigo-600 font-medium hover:bg-indigo-50 transition-colors duration-200">
+              Get Started
+            </a>
+          </div>
+        </div>
+        
+      
+        <div className="bg-white rounded-xl border-2 border-indigo-500 shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl transform md:-translate-y-2 relative">
+          <div className="absolute top-0 inset-x-0 h-1 bg-indigo-500"></div>
+          <div className="bg-indigo-50 py-2 text-center">
+            <span className="text-xs font-medium text-indigo-700">MOST POPULAR</span>
+          </div>
+          <div className="p-6 md:p-8">
+            <h3 className="text-xl font-bold mb-2">Pro</h3>
+            <p className="text-neutral-600 text-sm mb-4">Ideal for small teams and growing businesses.</p>
+            
+            <div className="monthly-price">
+              <div className="flex items-end mb-1">
+                <span className="text-4xl font-bold">$79</span>
+                <span className="text-neutral-500 ml-1">/month</span>
+              </div>
+              <p className="text-xs text-neutral-500 mb-6">Billed monthly</p>
+            </div>
+            
+            <div className="annual-price hidden">
+              <div className="flex items-end mb-1">
+                <span className="text-4xl font-bold">$63</span>
+                <span className="text-neutral-500 ml-1">/month</span>
+              </div>
+              <p className="text-xs text-neutral-500 mb-6">Billed annually ($756/year)</p>
+            </div>
+            
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">25 Active Prompts</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">50,000 API calls/month</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Advanced Analytics</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Priority Support</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Custom Domain</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Team Collaboration (3 members)</span>
+              </li>
+            </ul>
+            
+            <a href="#cta" className="block text-center py-3 px-4 rounded-md bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors duration-200">
+              Get Started
+            </a>
+          </div>
+        </div>
+        
+       
+        <div className="bg-white rounded-xl border border-neutral-200 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-md">
+          <div className="p-6 md:p-8">
+            <h3 className="text-xl font-bold mb-2">Enterprise</h3>
+            <p className="text-neutral-600 text-sm mb-4">Advanced features for larger teams and organizations.</p>
+            
+            <div className="monthly-price">
+              <div className="flex items-end mb-1">
+                <span className="text-4xl font-bold">$199</span>
+                <span className="text-neutral-500 ml-1">/month</span>
+              </div>
+              <p className="text-xs text-neutral-500 mb-6">Billed monthly</p>
+            </div>
+            
+            <div className="annual-price hidden">
+              <div className="flex items-end mb-1">
+                <span className="text-4xl font-bold">$159</span>
+                <span className="text-neutral-500 ml-1">/month</span>
+              </div>
+              <p className="text-xs text-neutral-500 mb-6">Billed annually ($1,908/year)</p>
+            </div>
+            
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Unlimited Active Prompts</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">250,000 API calls/month</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Enterprise Analytics & Reporting</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Dedicated Support Manager</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Custom Domain & Branding</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">Unlimited Team Members</span>
+              </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span className="text-neutral-700">SOC 2 Compliance</span>
+              </li>
+            </ul>
+            
+            <a href="#cta" className="block text-center py-3 px-4 rounded-md border border-indigo-600 text-indigo-600 font-medium hover:bg-indigo-50 transition-colors duration-200">
+              Contact Sales
+            </a>
+          </div>
+        </div>
+      </div>
+      
+   
+      <div className="mt-20 max-w-3xl mx-auto">
+        <h3 className="text-2xl font-bold mb-8 text-center">Frequently Asked Questions</h3>
+        
+        <div className="space-y-6">
+       
+          <div className="border border-neutral-200 rounded-lg overflow-hidden">
+            <button className="faq-button flex justify-between items-center w-full p-4 text-left focus:outline-none" aria-expanded="false">
+              <span className="font-medium">Can I switch plans later?</span>
+              <svg className="faq-icon w-5 h-5 text-neutral-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="faq-content hidden overflow-hidden bg-neutral-50 border-t border-neutral-200">
+              <div className="p-4">
+                <p className="text-neutral-600">Yes, you can upgrade, downgrade, or cancel your plan at any time. Upgrades take effect immediately, while downgrades or cancellations will take effect at the end of your current billing cycle.</p>
+              </div>
+            </div>
+          </div>
+          
+    
+          <div className="border border-neutral-200 rounded-lg overflow-hidden">
+            <button className="faq-button flex justify-between items-center w-full p-4 text-left focus:outline-none" aria-expanded="false">
+              <span className="font-medium">What happens if I exceed my API call limit?</span>
+              <svg className="faq-icon w-5 h-5 text-neutral-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="faq-content hidden overflow-hidden bg-neutral-50 border-t border-neutral-200">
+              <div className="p-4">
+                <p className="text-neutral-600">If you exceed your monthly API call limit, you'll be charged a pay-as-you-go rate for additional calls. You'll receive notifications as you approach your limit, and you can set up spending caps to prevent unexpected charges.</p>
+              </div>
+            </div>
+          </div>
+          
+       
+          <div className="border border-neutral-200 rounded-lg overflow-hidden">
+            <button className="faq-button flex justify-between items-center w-full p-4 text-left focus:outline-none" aria-expanded="false">
+              <span className="font-medium">Is there a free trial available?</span>
+              <svg className="faq-icon w-5 h-5 text-neutral-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="faq-content hidden overflow-hidden bg-neutral-50 border-t border-neutral-200">
+              <div className="p-4">
+                <p className="text-neutral-600">Yes, we offer a 14-day free trial of our Pro plan with no credit card required. You can test all features and functionality before committing to a paid subscription.</p>
+              </div>
+            </div>
+          </div>
+          
+       
+          <div className="border border-neutral-200 rounded-lg overflow-hidden">
+            <button className="faq-button flex justify-between items-center w-full p-4 text-left focus:outline-none" aria-expanded="false">
+              <span className="font-medium">Do you offer custom solutions for larger enterprises?</span>
+              <svg className="faq-icon w-5 h-5 text-neutral-500 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div className="faq-content hidden overflow-hidden bg-neutral-50 border-t border-neutral-200">
+              <div className="p-4">
+                <p className="text-neutral-600">Yes, we offer tailored solutions for enterprise customers with specific needs. Contact our sales team to discuss custom pricing, features, and implementation support for your organization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom Image and CTA -->
+      <div className="mt-20 flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-auto">
+        <div className="md:w-1/2">
+          <div className="rounded-lg overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1520013817300-1f4c1cb245ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8bWluaW1hbGlzdCUyNTIwdGllcmVkJTI1MjBwcmljaW5nJTI1MjBjYXJkcyUyNTIwU2FhUyUyNTIwQUklMjUyMHByb21wdCUyNTIwdGVzdGluZyUyNTIwcGxhdGZvcm0lMjUyMHByb2Zlc3Npb25hbCUyNTIwZmxhdCUyNTIwZGVzaWduJTI1MjBibHVlJTI1MjBncmFkaWVudCUyNTIwY2xlYW4lMjUyMGludGVyZmFjZSUyNTIwaGlnaCUyNTIwcmVzb2x1dGlvbnxlbnwwfDB8fGJsdWV8MTc0NDc0Mjg2NHww&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+              alt="Yellow paper boat representing simple navigation through complex AI interfaces"
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400'"
+              className="w-full h-auto object-cover rounded-lg"
+              width="400"
+              height="300"
+            >
+            <p className="text-xs text-neutral-500 mt-2 text-right">Photo by Alex Padurariu</p>
+          </div>
+        </div>
+        <div className="md:w-1/2">
+          <h3 className="text-2xl font-bold mb-4">Still not sure which plan is right?</h3>
+          <p className="text-neutral-600 mb-6">Our team is ready to help you find the perfect solution for your specific needs. Schedule a free consultation to discuss your requirements.</p>
+          <button id="schedule-demo-button" className="px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-200">
+            Schedule a Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="demo-modal" className="fixed inset-0 z-50 overflow-y-auto hidden" aria-modal="true" aria-hidden="true">
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <!-- Backdrop -->
+      <div id="modal-backdrop" className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+      
+      
+      <div className="relative bg-white rounded-lg max-w-md w-full mx-auto shadow-xl">
+        <div className="absolute top-4 right-4">
+          <button id="close-modal" className="text-neutral-500 hover:text-neutral-700 focus:outline-none" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-4">Schedule a Demo</h3>
+          <p className="text-neutral-600 mb-6">Fill out the form below and our team will contact you to schedule a personalized demo.</p>
+          
+          <form id="demo-form" className="space-y-4">
+            <div>
+              <label for="name" className="block text-sm font-medium text-neutral-700 mb-1">Full Name</label>
+              <input type="text" id="name" name="name" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            
+            <div>
+              <label for="email" className="block text-sm font-medium text-neutral-700 mb-1">Business Email</label>
+              <input type="email" id="email" name="email" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            
+            <div>
+              <label for="company" className="block text-sm font-medium text-neutral-700 mb-1">Company Name</label>
+              <input type="text" id="company" name="company" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            
+            <div>
+              <label for="plan" className="block text-sm font-medium text-neutral-700 mb-1">Interested Plan</label>
+              <select id="plan" name="plan" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <option value="starter">Starter</option>
+                <option value="pro" selected>Pro</option>
+                <option value="enterprise">Enterprise</option>
+                <option value="custom">Custom Solution</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="message" className="block text-sm font-medium text-neutral-700 mb-1">Additional Information</label>
+              <textarea id="message" name="message" rows="3" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+            </div>
+            
+            <button type="submit" className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md transition-colors duration-200">
+              Submit Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Pricing Toggle Functionality
+    const pricingToggle = document.getElementById('pricing-toggle');
+    const monthlyLabel = document.getElementById('monthly-label');
+    const annualLabel = document.getElementById('annual-label');
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const annualPrices = document.querySelectorAll('.annual-price');
+
+    pricingToggle.addEventListener('change', function() {
+      if (this.checked) {
+        // Annual pricing
+        monthlyPrices.forEach(price => price.classList.add('hidden'));
+        annualPrices.forEach(price => price.classList.remove('hidden'));
+        monthlyLabel.classList.add('text-neutral-400');
+        monthlyLabel.classList.remove('text-neutral-900');
+        annualLabel.classList.add('text-neutral-900');
+        annualLabel.classList.remove('text-neutral-400');
+        document.querySelector('.dot').classList.add('translate-x-6');
+      } else {
+        // Monthly pricing
+        monthlyPrices.forEach(price => price.classList.remove('hidden'));
+        annualPrices.forEach(price => price.classList.add('hidden'));
+        monthlyLabel.classList.add('text-neutral-900');
+        monthlyLabel.classList.remove('text-neutral-400');
+        annualLabel.classList.add('text-neutral-400');
+        annualLabel.classList.remove('text-neutral-900');
+        document.querySelector('.dot').classList.remove('translate-x-6');
+      }
+    });
+
+    // FAQ Accordion Functionality
+    const faqButtons = document.querySelectorAll('.faq-button');
+    
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        
+        // Check if currently expanded
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        
+        // Toggle the content visibility
+        if (isExpanded) {
+          content.classList.add('hidden');
+          icon.classList.remove('rotate-180');
+          button.setAttribute('aria-expanded', 'false');
+        } else {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+    
+    // Modal Functionality
+    const modal = document.getElementById('demo-modal');
+    const openModalButton = document.getElementById('schedule-demo-button');
+    const closeModalButton = document.getElementById('close-modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const demoForm = document.getElementById('demo-form');
+    
+    // Track last focused element
+    let lastFocusedElement = null;
+    
+    // Function to open modal
+    function openModal() {
+      // Store last focused element
+      lastFocusedElement = document.activeElement;
+      
+      // Show modal
+      modal.classList.remove('hidden');
+      
+      // Prevent page scrolling
+      document.body.style.overflow = 'hidden';
+      
+      // Set focus to first input
+      document.getElementById('name').focus();
+      
+      // Set ARIA attributes
+      modal.setAttribute('aria-hidden', 'false');
+    }
+    
+    // Function to close modal
+    function closeModal() {
+      // Hide modal
+      modal.classList.add('hidden');
+      
+      // Re-enable page scrolling
+      document.body.style.overflow = '';
+      
+      // Return focus
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+      
+      // Set ARIA attributes
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    
+    // Event Listeners
+    openModalButton.addEventListener('click', openModal);
+    closeModalButton.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+    
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+    
+    // Focus trap in modal
+    modal.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') {
+        const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        
+        if (e.shiftKey) {
+          if (document.activeElement === firstElement) {
+            lastElement.focus();
+            e.preventDefault();
+          }
+        } else {
+          if (document.activeElement === lastElement) {
+            firstElement.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    });
+    
+    // Form submission handler (prevent default for demo)
+    demoForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Demo request submitted! Our team will contact you shortly.');
+      closeModal();
+    });
+  </script>
+</div>
+
+</element><element id="20886821-e157-403a-a7a9-5dc13545a380" data-section-id="20886821-e157-403a-a7a9-5dc13545a380">
+
+<div id="root">
+  <section id="testimonials" className="py-20 bg-white">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Testimonials</h2>
+        <p className="text-neutral-600 max-w-2xl mx-auto">See what our customers are saying about how our platform has transformed their AI development workflow.</p>
+      </div>
+      
+      <div className="max-w-6xl mx-auto">
+       
+        <div className="mb-16 bg-neutral-50 rounded-2xl p-6 md:p-8 border border-neutral-200">
+          <div className="flex flex-col md:flex-row gap-8 items-center">
+            <div className="md:w-1/3">
+              <div className="w-32 h-32 mx-auto rounded-full overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8cHJvZmVzc2lvbmFsJTI1MjBoZWFkc2hvdCUyNTIwZGl2ZXJzZSUyNTIwdGVjaCUyNTIwcHJvZmVzc2lvbmFscyUyNTIwc21pbGluZyUyNTIwY29uZmlkZW50JTI1MjBjaXJjdWxhciUyNTIwY3JvcCUyNTIwY2xlYW4lMjUyMGJhY2tncm91bmQlMjUyMFNhYVMlMjUyMGluZHVzdHJ5JTI1MjBwZXJzb24lMjUyMHBvcnRyYWl0fGVufDF8MXx8fDE3NDQ3NDI5NzV8MA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                  alt="Professional tech leader in suit"
+                  onerror="this.onerror=null; this.src='https://placehold.co/300x300'"
+                  width="300"
+                  height="300"
+                  className="w-full h-full object-cover"
+                >
+              </div>
+              <div className="text-center mt-4">
+                <h4 className="font-bold text-lg">Michael Chen</h4>
+                <p className="text-neutral-600">CTO, TechFusion</p>
+              </div>
+              <p className="text-xs text-neutral-500 text-center mt-2">Photo by Ali Morshedlou</p>
+            </div>
+            
+            <div className="md:w-2/3">
+              <svg className="h-10 w-10 text-indigo-600 mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+              </svg>
+              <p className="text-xl text-neutral-700 italic mb-4">
+                "This platform completely revolutionized how we develop AI features. Creating and testing prompts used to take days of back-and-forth between our product and engineering teams. Now, our product managers can iterate on prompts themselves and immediately see the results."
+              </p>
+              <p className="text-neutral-600">
+                "What impressed us most was how seamlessly the API integration works. We've reduced our AI feature development cycle by 70% while improving quality. The analytics also give us incredible insights into how our prompts perform in production."
+              </p>
+              
+              <div className="mt-6 flex items-center">
+                <div className="flex text-yellow-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+         
+          <div className="bg-neutral-50 rounded-xl p-6 border border-neutral-200">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1603202662706-62ead3176b8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8NHx8cHJvZmVzc2lvbmFsJTI1MjBoZWFkc2hvdCUyNTIwZGl2ZXJzZSUyNTIwdGVjaCUyNTIwcHJvZmVzc2lvbmFscyUyNTIwc21pbGluZyUyNTIwY29uZmlkZW50JTI1MjBjaXJjdWxhciUyNTIwY3JvcCUyNTIwY2xlYW4lMjUyMGJhY2tncm91bmQlMjUyMFNhYVMlMjUyMGluZHVzdHJ5JTI1MjBwZXJzb24lMjUyMHBvcnRyYWl0fGVufDF8MXx8fDE3NDQ3NDI5NzV8MA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                  alt="Professional woman in office"
+                  onerror="this.onerror=null; this.src='https://placehold.co/200x200'"
+                  width="200"
+                  height="200"
+                  className="w-full h-full object-cover"
+                >
+              </div>
+              <div>
+                <h4 className="font-bold text-lg">Sarah Johnson</h4>
+                <p className="text-neutral-600">Product Lead, Fintech Solutions</p>
+              </div>
+            </div>
+            <p className="text-neutral-700 mb-4">
+              "The ability to rapidly test different prompt variations has been a game-changer for our product. We've improved response quality by 35% and reduced token usage by 28%."
+            </p>
+            <div className="flex text-yellow-400">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p className="text-xs text-neutral-500 mt-2">Photo by Cherrydeck</p>
+          </div>
+          
+         
+          <div className="bg-neutral-50 rounded-xl p-6 border border-neutral-200">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1555421689-43cad7100750?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8cHJvZmVzc2lvbmFsJTI1MjBoZWFkc2hvdCUyNTIwZGl2ZXJzZSUyNTIwdGVjaCUyNTIwcHJvZmVzc2lvbmFscyUyNTIwc21pbGluZyUyNTIwY29uZmlkZW50JTI1MjBjaXJjdWxhciUyNTIwY3JvcCUyNTIwY2xlYW4lMjUyMGJhY2tncm91bmQlMjUyMFNhYVMlMjUyMGluZHVzdHJ5JTI1MjBwZXJzb24lMjUyMHBvcnRyYWl0fGVufDF8MXx8fDE3NDQ3NDI5NzV8MA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                  alt="Professional man on smartphone"
+                  onerror="this.onerror=null; this.src='https://placehold.co/200x200'"
+                  width="200"
+                  height="200"
+                  className="w-full h-full object-cover"
+                >
+              </div>
+              <div>
+                <h4 className="font-bold text-lg">David Rodriguez</h4>
+                <p className="text-neutral-600">Engineering Manager, AI Innovations</p>
+              </div>
+            </div>
+            <p className="text-neutral-700 mb-4">
+              "API integration was seamless. We went from concept to production in 3 days instead of 3 weeks. The analytics dashboard gives us invaluable insights into usage patterns."
+            </p>
+            <div className="flex text-yellow-400">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p className="text-xs text-neutral-500 mt-2">Photo by Austin Distel</p>
+          </div>
+          
+          
+          <div className="bg-neutral-50 rounded-xl p-6 border border-neutral-200">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1600275669283-4bf2bb8a990c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8NXx8cHJvZmVzc2lvbmFsJTI1MjBoZWFkc2hvdCUyNTIwZGl2ZXJzZSUyNTIwdGVjaCUyNTIwcHJvZmVzc2lvbmFscyUyNTIwc21pbGluZyUyNTIwY29uZmlkZW50JTI1MjBjaXJjdWxhciUyNTIwY3JvcCUyNTIwY2xlYW4lMjUyMGJhY2tncm91bmQlMjUyMFNhYVMlMjUyMGluZHVzdHJ5JTI1MjBwZXJzb24lMjUyMHBvcnRyYWl0fGVufDF8MXx8fDE3NDQ3NDI5NzV8MA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                  alt="Professional woman on laptop"
+                  onerror="this.onerror=null; this.src='https://placehold.co/200x200'"
+                  width="200"
+                  height="200"
+                  className="w-full h-full object-cover"
+                >
+              </div>
+              <div>
+                <h4 className="font-bold text-lg">Emma Wilson</h4>
+                <p className="text-neutral-600">Director of AI, Global Commerce</p>
+              </div>
+            </div>
+            <p className="text-neutral-700 mb-4">
+              "Our customer support team now creates their own AI assistants without any technical help. The platform's simplicity combined with its power is remarkable."
+            </p>
+            <div className="flex text-yellow-400">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p className="text-xs text-neutral-500 mt-2">Photo by Daria Pimkina</p>
+          </div>
+          
+          <!-- Testimonial 4 -->
+          <div className="bg-neutral-50 rounded-xl p-6 border border-neutral-200">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTI1MjBoZWFkc2hvdCUyNTIwZGl2ZXJzZSUyNTIwdGVjaCUyNTIwcHJvZmVzc2lvbmFscyUyNTIwc21pbGluZyUyNTIwY29uZmlkZW50JTI1MjBjaXJjdWxhciUyNTIwY3JvcCUyNTIwY2xlYW4lMjUyMGJhY2tncm91bmQlMjUyMFNhYVMlMjUyMGluZHVzdHJ5JTI1MjBwZXJzb24lMjUyMHBvcnRyYWl0fGVufDF8MXx8fDE3NDQ3NDI5NzV8MA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                  alt="Professional man with tea"
+                  onerror="this.onerror=null; this.src='https://placehold.co/200x200'"
+                  width="200"
+                  height="200"
+                  className="w-full h-full object-cover"
+                >
+              </div>
+              <div>
+                <h4 className="font-bold text-lg">James Thompson</h4>
+                <p className="text-neutral-600">Founder, NLP Innovations</p>
+              </div>
+            </div>
+            <p className="text-neutral-700 mb-4">
+              "We've built our entire business around this platform. The ability to rapidly iterate on prompts and immediately deploy them as APIs is unmatched in the industry."
+            </p>
+            <div className="flex text-yellow-400">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+            <p className="text-xs text-neutral-500 mt-2">Photo by Andrew Neel</p>
+          </div>
+        </div>
+        
+        <!-- Stats -->
+        <div className="mt-16 px-6 py-8 bg-indigo-50 rounded-xl border border-indigo-100">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold mb-2">Trusted by teams worldwide</h3>
+            <p className="text-neutral-600">Our platform is the backbone of AI operations for companies of all sizes.</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+              <p className="text-3xl md:text-4xl font-bold text-indigo-600 mb-1">2,500+</p>
+              <p className="text-neutral-600">Active customers</p>
+            </div>
+            <div>
+              <p className="text-3xl md:text-4xl font-bold text-indigo-600 mb-1">150M+</p>
+              <p className="text-neutral-600">API calls per month</p>
+            </div>
+            <div>
+              <p className="text-3xl md:text-4xl font-bold text-indigo-600 mb-1">99.99%</p>
+              <p className="text-neutral-600">Uptime SLA</p>
+            </div>
+            <div>
+              <p className="text-3xl md:text-4xl font-bold text-indigo-600 mb-1">4.9/5</p>
+              <p className="text-neutral-600">Customer satisfaction</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Action -->
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl font-bold mb-4">Ready to transform your AI development?</h3>
+          <p className="text-neutral-600 mb-8 max-w-2xl mx-auto">Join thousands of developers and companies building powerful AI experiences with our platform.</p>
+          <a href="#cta" className="inline-block px-8 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-200">
+            Start Free Trial
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</element><element id="516dc53d-cc05-4db5-bfe7-caa2ef323e23" data-section-id="516dc53d-cc05-4db5-bfe7-caa2ef323e23">
+
+<div id="root">
+  <section id="integration" className="py-20 bg-neutral-50">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Integration</h2>
+        <p className="text-neutral-600 max-w-2xl mx-auto">Seamlessly integrate our AI prompts into your application with just a few lines of code.</p>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <img 
+            src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTI1MjBBUEklMjUyMGludGVncmF0aW9uJTI1MjBkYXNoYm9hcmQlMjUyMHdpdGglMjUyMGNvZGUlMjUyMHNuaXBwZXRzJTI1MjBjbGVhbiUyNTIwbW9kZXJuJTI1MjBpbnRlcmZhY2UlMjUyMHRlY2glMjUyMGJsdWUlMjUyMG1pbmltYWx8ZW58MHwwfHxibHVlfDE3NDQ3NDMxMTZ8MA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+            alt="Professional working on laptop showcasing integration workflow"
+            onerror="this.onerror=null; this.src='https://placehold.co/800x600'"
+            className="rounded-lg shadow-md w-full"
+            width="800"
+            height="600"
+          >
+          <p className="text-xs text-neutral-500 mt-2 text-right">Photo by Icons8 Team</p>
+        </div>
+
+        <div>
+          <h3 className="text-2xl font-bold mb-6">Add AI Power to Your App in Minutes</h3>
+          <p className="text-neutral-600 mb-8">Our RESTful API endpoints make it simple to integrate sophisticated AI prompt capabilities into any application. No machine learning expertise required.</p>
+          
+          <div className="space-y-6">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100 text-indigo-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h4 className="text-lg font-semibold mb-1">RESTful API Endpoints</h4>
+                <p className="text-neutral-600">Each prompt you create automatically gets a dedicated API endpoint that you can call from any application.</p>
+              </div>
+            </div>
+
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100 text-indigo-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h4 className="text-lg font-semibold mb-1">Secure Authentication</h4>
+                <p className="text-neutral-600">API keys and optional JWT authentication ensure your endpoints remain secure and accessible only to authorized users.</p>
+              </div>
+            </div>
+
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100 text-indigo-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M13 7H7v6h6V7z" />
+                    <path fill-rule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h4 className="text-lg font-semibold mb-1">Versioned Endpoints</h4>
+                <p className="text-neutral-600">Update your prompts anytime while maintaining backward compatibility. Deploy changes without breaking existing integrations.</p>
+              </div>
+            </div>
+
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-100 text-indigo-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              <div className="ml-4">
+                <h4 className="text-lg font-semibold mb-1">Comprehensive SDKs</h4>
+                <p className="text-neutral-600">Official client libraries for JavaScript, Python, Ruby, PHP, and more. Start integrating in your preferred language.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code Examples Section -->
+      <div className="mt-20">
+        <h3 className="text-2xl font-bold text-center mb-10">Simple Integration Examples</h3>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- JavaScript Example -->
+          <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden">
+            <div className="bg-neutral-800 px-4 py-2 flex items-center">
+              <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+              <span className="text-white text-sm ml-2">JavaScript</span>
+            </div>
+            <div className="p-4 bg-neutral-50">
+              <pre className="text-xs md:text-sm text-neutral-800 font-mono overflow-x-auto"><code>// JavaScript/Node.js
+fetch('https://api.promptapi.com/v1/prompts/customer-support', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_API_KEY'
+  },
+  body: JSON.stringify({
+    customer_name: 'Alex',
+    product: 'Smart Home Hub',
+    issue: 'connectivity problem'
+  })
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));</code></pre>
+            </div>
+          </div>
+
+          <!-- Python Example -->
+          <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden">
+            <div className="bg-neutral-800 px-4 py-2 flex items-center">
+              <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+              <span className="text-white text-sm ml-2">Python</span>
+            </div>
+            <div className="p-4 bg-neutral-50">
+              <pre className="text-xs md:text-sm text-neutral-800 font-mono overflow-x-auto"><code># Python
+import requests
+
+url = "https://api.promptapi.com/v1/prompts/product-description"
+headers = {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer YOUR_API_KEY"
+}
+payload = {
+    "product_name": "EcoBlend Mixer",
+    "features": ["1200W motor", "10 speeds", "BPA free"],
+    "tone": "professional"
+}
+
+response = requests.post(url, json=payload, headers=headers)
+print(response.json())</code></pre>
+            </div>
+          </div>
+
+          <!-- cURL Example -->
+          <div className="bg-white rounded-xl shadow-sm border border-neutral-200 overflow-hidden">
+            <div className="bg-neutral-800 px-4 py-2 flex items-center">
+              <div className="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
+              <span className="text-white text-sm ml-2">cURL</span>
+            </div>
+            <div className="p-4 bg-neutral-50">
+              <pre className="text-xs md:text-sm text-neutral-800 font-mono overflow-x-auto"><code>curl -X POST \
+  https://api.promptapi.com/v1/prompts/email-writer \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer YOUR_API_KEY' \
+  -d '{
+    "recipient": "john@example.com",
+    "subject": "Meeting Proposal",
+    "tone": "friendly",
+    "key_points": ["Project update", "Timeline discussion"]
+  }'</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Example Button -->
+      <div className="mt-12 text-center">
+        <button id="open-code-example" className="px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          See Interactive Example
+        </button>
+      </div>
+
+      <!-- API Features Grid -->
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm">
+          <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h4 className="text-lg font-semibold mb-2">High Performance</h4>
+          <p className="text-neutral-600">99.9% uptime SLA with global CDN distribution ensures fast response times worldwide.</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm">
+          <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h4 className="text-lg font-semibold mb-2">Enterprise-Grade Security</h4>
+          <p className="text-neutral-600">SOC 2 compliant with end-to-end encryption, audit logs, and advanced rate limiting.</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm">
+          <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+            </svg>
+          </div>
+          <h4 className="text-lg font-semibold mb-2">Comprehensive Logs</h4>
+          <p className="text-neutral-600">Detailed request and response logging with searchable history and error tracking.</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm">
+          <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h4 className="text-lg font-semibold mb-2">Usage Quotas</h4>
+          <p className="text-neutral-600">Flexible rate limits with burst capabilities and automatic scaling for traffic spikes.</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm">
+          <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h4 className="text-lg font-semibold mb-2">Real-time Analytics</h4>
+          <p className="text-neutral-600">Monitor endpoint performance and usage with detailed analytics dashboard.</p>
+        </div>
+
+        <div className="bg-white p-6 rounded-lg border border-neutral-200 shadow-sm">
+          <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h4 className="text-lg font-semibold mb-2">Webhooks</h4>
+          <p className="text-neutral-600">Configure webhooks for event-driven integrations and real-time notifications.</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div className="mt-20 text-center">
+        <h3 className="text-2xl font-bold mb-4">Ready to integrate AI into your application?</h3>
+        <p className="text-neutral-600 mb-6 max-w-2xl mx-auto">Join thousands of developers already using our API to power their applications.</p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#cta" className="px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-200">
+            Get API Access
+          </a>
+          <a href="#" className="px-6 py-3 border border-neutral-300 rounded-md font-medium hover:bg-neutral-100 transition-colors duration-200">
+            Read API Docs
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Example Modal -->
+  <div id="example-modal" className="fixed inset-0 z-50 overflow-y-auto hidden" aria-modal="true" aria-hidden="true">
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <!-- Backdrop -->
+      <div id="modal-backdrop" className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+      
+      <!-- Modal Content -->
+      <div className="relative bg-white rounded-xl max-w-4xl w-full mx-auto shadow-xl" role="dialog">
+        <div className="absolute top-4 right-4">
+          <button id="close-modal" className="text-neutral-500 hover:text-neutral-700 focus:outline-none" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-4">Interactive API Example</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h4 className="font-medium mb-2">Prompt Template</h4>
+              <div className="bg-neutral-100 p-4 rounded-md font-mono text-sm mb-4">
+                Generate a  product description for  highlighting these features: 
+              </div>
+              
+              <h4 className="font-medium mb-2">Input Parameters</h4>
+              <div className="space-y-3">
+                <div>
+                  <label for="product-name" className="block text-sm font-medium text-neutral-700 mb-1">Product Name</label>
+                  <input type="text" id="product-name" value="SmartHome Hub Pro" className="block w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                
+                <div>
+                  <label for="tone" className="block text-sm font-medium text-neutral-700 mb-1">Tone</label>
+                  <select id="tone" className="block w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                    <option value="professional">Professional</option>
+                    <option value="casual">Casual</option>
+                    <option value="enthusiastic">Enthusiastic</option>
+                    <option value="technical">Technical</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label for="features" className="block text-sm font-medium text-neutral-700 mb-1">Features (comma-separated)</label>
+                  <input type="text" id="features" value="Voice control, Smart app integration, Energy monitoring" className="block w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                </div>
+                
+                <button id="generate-button" className="mt-2 w-full px-4 py-2 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-200">
+                  Generate Description
+                </button>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-medium mb-2">API Response</h4>
+              <div id="api-response" className="bg-neutral-800 text-white p-4 rounded-md font-mono text-sm h-80 overflow-y-auto">
+                Click "Generate Description" to see a simulated API response...
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-6">
+            <h4 className="font-medium mb-2">Code Snippet</h4>
+            <div className="bg-neutral-100 p-4 rounded-md font-mono text-sm overflow-x-auto">
+              <pre><code>fetch('https://api.promptapi.com/v1/prompts/product-description', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOUR_API_KEY'
+  },
+  body: JSON.stringify({
+    product_name: 'SmartHome Hub Pro',
+    tone: 'professional',
+    features: ['Voice control', 'Smart app integration', 'Energy monitoring']
+  })
+})
+.then(response => response.json())
+.then(data => console.log(data));</code></pre>
+            </div>
+          </div>
+          
+          <div className="mt-6 text-neutral-600 text-sm">
+            <p>This is a simulated example. In a real integration, the request would be sent to our API servers which would process the prompt with parameters and return an AI-generated response.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal Functionality
+    const modal = document.getElementById('example-modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const openModalButton = document.getElementById('open-code-example');
+    const closeModalButton = document.getElementById('close-modal');
+    const generateButton = document.getElementById('generate-button');
+    const apiResponse = document.getElementById('api-response');
+    
+    // Store last focused element
+    let lastFocusedElement = null;
+    
+    // Open modal function
+    function openModal() {
+      // Store the element that had focus
+      lastFocusedElement = document.activeElement;
+      
+      // Show modal
+      modal.classList.remove('hidden');
+      
+      // Add overflow hidden to body to prevent scrolling
+      document.body.style.overflow = 'hidden';
+      
+      // Set focus to first input
+      document.getElementById('product-name').focus();
+      
+      // Set aria attributes
+      modal.setAttribute('aria-hidden', 'false');
+    }
+    
+    // Close modal function
+    function closeModal() {
+      // Hide modal
+      modal.classList.add('hidden');
+      
+      // Remove overflow hidden from body
+      document.body.style.overflow = '';
+      
+      // Return focus to the element that had it before the modal was opened
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+      
+      // Set aria attributes
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    
+    // Generate example response
+    function generateResponse() {
+      const productName = document.getElementById('product-name').value || 'SmartHome Hub Pro';
+      const tone = document.getElementById('tone').value || 'professional';
+      const featuresInput = document.getElementById('features').value || 'Voice control, Smart app integration, Energy monitoring';
+      const features = featuresInput.split(',').map(f => f.trim());
+      
+      // Show loading state
+      apiResponse.innerHTML = 'Generating response...';
+      
+      // Simulate API delay
+      setTimeout(() => {
+        let responseText = '';
+        
+        switch (tone) {
+          case 'professional':
+            responseText = `The ${productName} is a state-of-the-art smart home solution designed for modern living. It features intuitive ${features[0]}, seamless ${features[1]}, and comprehensive ${features[2]} to optimize your home's efficiency. This premium device integrates effortlessly with your existing setup while providing advanced automation capabilities for discerning homeowners.`;
+            break;
+          case 'casual':
+            responseText = `Meet the ${productName} – your home's new best friend! It's super easy to use with awesome ${features[0]}, cool ${features[1]}, and handy ${features[2]}. You'll love how it makes everything in your home work better together without any hassle. Just set it up once and enjoy all the smart features!`;
+            break;
+          case 'enthusiastic':
+            responseText = `The INCREDIBLE ${productName} will TRANSFORM your home experience! With AMAZING ${features[0]}, REVOLUTIONARY ${features[1]}, and GAME-CHANGING ${features[2]}, you'll wonder how you ever lived without it! Get ready to be BLOWN AWAY by how simple and POWERFUL smart home technology can be!`;
+            break;
+          case 'technical':
+            responseText = `The ${productName} utilizes advanced IoT protocols to facilitate ${features[0]} with natural language processing capabilities. It implements RESTful API architecture for ${features[1]} across multiple platforms. The integrated ${features[2]} employs machine learning algorithms to optimize resource allocation and provide actionable consumption analytics.`;
+            break;
+          default:
+            responseText = `The ${productName} features ${features[0]}, ${features[1]}, and ${features[2]}.`;
+        }
+        
+        // Format as JSON response
+        const jsonResponse = {
+          success: true,
+          timestamp: new Date().toISOString(),
+          request: {
+            product_name: productName,
+            tone: tone,
+            features: features
+          },
+          response: {
+            text: responseText
+          },
+          usage: {
+            prompt_tokens: Math.floor(Math.random() * 50) + 50,
+            completion_tokens: Math.floor(Math.random() * 100) + 100,
+            total_tokens: Math.floor(Math.random() * 150) + 150
+          }
+        };
+        
+        // Display response
+        apiResponse.innerHTML = JSON.stringify(jsonResponse, null, 2);
+      }, 800);
+    }
+    
+    // Add event listeners
+    openModalButton.addEventListener('click', openModal);
+    closeModalButton.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+    generateButton.addEventListener('click', generateResponse);
+    
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+    
+    // Focus trap inside modal
+    modal.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') {
+        const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        
+        // If shift+tab and focus is on first element, move to last element
+        if (e.shiftKey) {
+          if (document.activeElement === firstElement) {
+            lastElement.focus();
+            e.preventDefault();
+          }
+        // If tab and focus is on last element, move to first element
+        } else {
+          if (document.activeElement === lastElement) {
+            firstElement.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    });
+  </script>
+</div>
+
+</element><element id="ec3a301c-953f-4ef0-bfde-cf3a77f2bd3e" data-section-id="ec3a301c-953f-4ef0-bfde-cf3a77f2bd3e">
+
+
+<div id="root">
+  <section id="faq" className="py-20 bg-white">
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">FAQ</h2>
+        <p className="text-neutral-600 max-w-2xl mx-auto">Find answers to the most commonly asked questions about our AI prompt testing and API platform.</p>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="bg-neutral-50 rounded-xl p-6 md:p-8 border border-neutral-200">
+          <div className="flex items-start">
+            <div className="mr-6">
+              <img 
+                src="https://images.unsplash.com/photo-1520013817300-1f4c1cb245ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8bWluaW1hbGlzdCUyNTIwRkFRJTI1MjBpbnRlcmZhY2UlMjUyMHdpdGglMjUyMEFJJTI1MjBwcm9tcHQlMjUyMHRlc3RpbmclMjUyMHZpc3VhbGl6YXRpb24lMjUyMGNsZWFuJTI1MjBwcm9mZXNzaW9uYWwlMjUyMGJsdWUlMjUyMHdoaXRlJTI1MjB0ZWNobmljYWwlMjUyMGlsbHVzdHJhdGlvbnxlbnwwfDB8fGJsdWV8MTc0NDc0MzIzM3ww&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                alt="Yellow paper boat representing navigating questions"
+                onerror="this.onerror=null; this.src='https://placehold.co/300x300'"
+                className="w-24 h-24 object-cover rounded-lg hidden md:block"
+                width="300"
+                height="300"
+              >
+              <p className="text-xs text-neutral-500 mt-2 text-center">Photo by Alex Padurariu</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-6">General Questions</h3>
+              <div className="space-y-6">
+             
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">What is PromptAPI?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">PromptAPI is a platform that allows you to create, test, and deploy AI prompts as API endpoints. You can define your prompt templates, test them with different inputs, and then deploy them with a single click, creating a dedicated API endpoint that you can integrate into your applications.</p>
+                  </div>
+                </div>
+              
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">How does prompt testing work?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">Our platform provides a real-time testing environment where you can input different parameters to your prompt template and immediately see the generated AI responses. You can iterate on your prompt until it produces the desired outputs, then deploy it directly from the testing interface.</p>
+                  </div>
+                </div>
+              
+              
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">Do I need coding experience?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">No coding experience is necessary to create and test prompts. Our visual editor and testing interface are designed for non-technical users. However, basic API knowledge is helpful when integrating the endpoints into your applications. We provide comprehensive documentation and code examples to make integration as simple as possible.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-neutral-50 rounded-xl p-6 md:p-8 border border-neutral-200">
+          <div className="flex items-start">
+            <div className="mr-6">
+              <img 
+                src="https://images.unsplash.com/photo-1504596217249-cef2ad2d6b53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8bWluaW1hbGlzdCUyNTIwRkFRJTI1MjBpbnRlcmZhY2UlMjUyMHdpdGglMjUyMEFJJTI1MjBwcm9tcHQlMjUyMHRlc3RpbmclMjUyMHZpc3VhbGl6YXRpb24lMjUyMGNsZWFuJTI1MjBwcm9mZXNzaW9uYWwlMjUyMGJsdWUlMjUyMHdoaXRlJTI1MjB0ZWNobmljYWwlMjUyMGlsbHVzdHJhdGlvbnxlbnwwfDB8fGJsdWV8MTc0NDc0MzIzM3ww&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                alt="Blue balloons representing elevated solutions"
+                onerror="this.onerror=null; this.src='https://placehold.co/300x300'"
+                className="w-24 h-24 object-cover rounded-lg hidden md:block"
+                width="300"
+                height="300"
+              >
+              <p className="text-xs text-neutral-500 mt-2 text-center">Photo by Richard Bagan</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-6">API & Technical</h3>
+              <div className="space-y-6">
+              
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">How are API endpoints generated?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">When you deploy a prompt, our system automatically generates a dedicated REST API endpoint for it. Each endpoint has a unique URL that accepts the parameters you defined in your prompt template. You can secure these endpoints with API keys and control access through your dashboard.</p>
+                  </div>
+                </div>
+              
+                <!-- FAQ Item 5 -->
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">What AI models are supported?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">Our platform supports leading AI models including GPT-4, GPT-3.5, Claude, PaLM, and more. You can select different models for each prompt based on your specific needs, balancing factors like response quality, speed, and cost. We regularly add support for new models as they become available.</p>
+                  </div>
+                </div>
+              
+                <!-- FAQ Item 6 -->
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">What programming languages are supported?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">Since our solution provides standard REST API endpoints, you can integrate with any programming language that supports HTTP requests. We offer official client libraries for JavaScript, Python, Ruby, PHP, Java, and Go to simplify integration. Our documentation includes code examples for all supported languages.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-neutral-50 rounded-xl p-6 md:p-8 border border-neutral-200">
+          <div className="flex items-start">
+            <div className="mr-6">
+              <img 
+                src="https://images.unsplash.com/photo-1485841890310-6a055c88698a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8bWluaW1hbGlzdCUyNTIwRkFRJTI1MjBpbnRlcmZhY2UlMjUyMHdpdGglMjUyMEFJJTI1MjBwcm9tcHQlMjUyMHRlc3RpbmclMjUyMHZpc3VhbGl6YXRpb24lMjUyMGNsZWFuJTI1MjBwcm9mZXNzaW9uYWwlMjUyMGJsdWUlMjUyMHdoaXRlJTI1MjB0ZWNobmljYWwlMjUyMGlsbHVzdHJhdGlvbnxlbnwwfDB8fGJsdWV8MTc0NDc0MzIzM3ww&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+                alt="Colorful cacti representing diverse solutions"
+                onerror="this.onerror=null; this.src='https://placehold.co/300x300'"
+                className="w-24 h-24 object-cover rounded-lg hidden md:block"
+                width="300"
+                height="300"
+              >
+              <p className="text-xs text-neutral-500 mt-2 text-center">Photo by Scott Webb</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-6">Pricing & Plans</h3>
+              <div className="space-y-6">
+                <!-- FAQ Item 7 -->
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">How does pricing work?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">Our pricing is based on a combination of the number of active prompts and API calls per month. We offer tiered plans starting with a free tier for experimentation, and scale up to enterprise plans for high-volume needs. You can view our detailed pricing on the Pricing page. Custom plans are available for enterprises with specific requirements.</p>
+                  </div>
+                </div>
+              
+                <!-- FAQ Item 8 -->
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">Is there a free trial available?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">Yes, we offer a 14-day free trial with access to all features and up to 5 active prompts and 1,000 API calls. No credit card is required to start your trial. You can upgrade to a paid plan at any time during or after your trial period. If you need more time to evaluate, contact our sales team.</p>
+                  </div>
+                </div>
+              
+                <!-- FAQ Item 9 -->
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">Can I change plans later?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">Yes, you can upgrade, downgrade, or cancel your subscription at any time from your account dashboard. Upgrades take effect immediately, while downgrades or cancellations will take effect at the end of your current billing cycle. There are no penalties for changing plans.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-neutral-50 rounded-xl p-6 md:p-8 border border-neutral-200">
+          <div className="flex items-start">
+            <div className="mr-6">
+              <div className="w-24 h-24 bg-indigo-100 rounded-lg flex items-center justify-center hidden md:flex">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold mb-6">Security & Support</h3>
+              <div className="space-y-6">
+                <!-- FAQ Item 10 -->
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">Is my data secure?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">Yes, security is our top priority. We use industry-standard encryption for all data in transit and at rest. We are SOC 2 Type II compliant and regularly undergo security audits. Your prompts and data are isolated and never shared between customers. You can review our security practices in our documentation.</p>
+                  </div>
+                </div>
+              
+                <!-- FAQ Item 11 -->
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">What support options are available?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">All plans include access to our knowledge base and community forum. Paid plans include email support with response times based on your plan tier. Enterprise plans include dedicated support managers and phone support. We also offer implementation assistance and training sessions for enterprise customers.</p>
+                  </div>
+                </div>
+              
+                <!-- FAQ Item 12 -->
+                <div className="faq-item">
+                  <button className="faq-question w-full text-left flex justify-between items-center focus:outline-none" aria-expanded="false">
+                    <span className="font-medium">Do you offer a service level agreement (SLA)?</span>
+                    <svg className="faq-icon w-5 h-5 text-indigo-600 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                  <div className="faq-answer mt-2 hidden">
+                    <p className="text-neutral-600">Yes, we offer a 99.9% uptime SLA for all paid plans. Enterprise plans have access to enhanced SLAs with up to 99.99% uptime guarantees and priority access to our infrastructure. All SLAs include financial credits for any service disruptions that fall below the guaranteed uptime percentage.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Still Have Questions -->
+      <div className="mt-16 text-center bg-indigo-50 rounded-xl p-8 max-w-3xl mx-auto">
+        <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
+        <p className="text-neutral-600 mb-6">Our team is ready to help you with any additional questions you might have about our platform.</p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button id="open-contact-modal" className="px-6 py-3 bg-indigo-600 text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-200">
+            Contact Support
+          </button>
+          <a href="#" className="px-6 py-3 border border-neutral-300 bg-white rounded-md font-medium hover:bg-neutral-100 transition-colors duration-200">
+            Read Documentation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Support Modal -->
+  <div id="contact-modal" className="fixed inset-0 z-50 overflow-y-auto hidden" aria-modal="true" aria-hidden="true">
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <!-- Backdrop -->
+      <div id="modal-backdrop" className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+      
+      <!-- Modal Content -->
+      <div className="relative bg-white rounded-lg max-w-md w-full mx-auto shadow-xl" role="dialog">
+        <div className="absolute top-4 right-4">
+          <button id="close-modal" className="text-neutral-500 hover:text-neutral-700 focus:outline-none" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-4">Contact Support</h3>
+          <p className="text-neutral-600 mb-6">Fill out the form below and our support team will get back to you as soon as possible.</p>
+          
+          <form id="support-form" className="space-y-4">
+            <div>
+              <label for="name" className="block text-sm font-medium text-neutral-700 mb-1">Full Name</label>
+              <input type="text" id="name" name="name" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            
+            <div>
+              <label for="email" className="block text-sm font-medium text-neutral-700 mb-1">Email Address</label>
+              <input type="email" id="email" name="email" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            
+            <div>
+              <label for="topic" className="block text-sm font-medium text-neutral-700 mb-1">Topic</label>
+              <select id="topic" name="topic" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500">
+                <option value="technical-question">Technical Question</option>
+                <option value="account-billing">Account & Billing</option>
+                <option value="feature-request">Feature Request</option>
+                <option value="bug-report">Bug Report</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="message" className="block text-sm font-medium text-neutral-700 mb-1">Message</label>
+              <textarea id="message" name="message" rows="4" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required></textarea>
+            </div>
+            
+            <button type="submit" className="w-full py-2 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md transition-colors duration-200">
+              Submit Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // FAQ Accordion Functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('.faq-icon');
+        
+        // Check if currently expanded
+        const isExpanded = question.getAttribute('aria-expanded') === 'true';
+        
+        // Toggle the content visibility
+        if (isExpanded) {
+          answer.classList.add('hidden');
+          icon.classList.remove('rotate-180');
+          question.setAttribute('aria-expanded', 'false');
+        } else {
+          answer.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+          question.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+    
+    // Modal Functionality
+    const modal = document.getElementById('contact-modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const openModalButton = document.getElementById('open-contact-modal');
+    const closeModalButton = document.getElementById('close-modal');
+    const supportForm = document.getElementById('support-form');
+    
+    // Store last focused element
+    let lastFocusedElement = null;
+    
+    // Open modal function
+    function openModal() {
+      // Store the element that had focus
+      lastFocusedElement = document.activeElement;
+      
+      // Show modal
+      modal.classList.remove('hidden');
+      
+      // Add overflow hidden to body to prevent scrolling
+      document.body.style.overflow = 'hidden';
+      
+      // Set focus to first input
+      document.getElementById('name').focus();
+      
+      // Set aria attributes
+      modal.setAttribute('aria-hidden', 'false');
+    }
+    
+    // Close modal function
+    function closeModal() {
+      // Hide modal
+      modal.classList.add('hidden');
+      
+      // Remove overflow hidden from body
+      document.body.style.overflow = '';
+      
+      // Return focus to the element that had it before the modal was opened
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+      
+      // Set aria attributes
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    
+    // Add event listeners
+    openModalButton.addEventListener('click', openModal);
+    closeModalButton.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+    
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+    
+    // Focus trap inside modal
+    modal.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') {
+        const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        
+        // If shift+tab and focus is on first element, move to last element
+        if (e.shiftKey) {
+          if (document.activeElement === firstElement) {
+            lastElement.focus();
+            e.preventDefault();
+          }
+        // If tab and focus is on last element, move to first element
+        } else {
+          if (document.activeElement === lastElement) {
+            firstElement.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    });
+    
+    // Form submission handler (prevent default for demo)
+    supportForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Support request submitted! Our team will contact you shortly.');
+      closeModal();
+    });
+  </script>
+</div>
+
+</element><element id="cc2b95a2-893d-42ef-8f57-7174843dcbc3" data-section-id="cc2b95a2-893d-42ef-8f57-7174843dcbc3">
+
+<div id="root">
+  <section id="cta" className="py-20 bg-indigo-600 relative overflow-hidden">
+    <!-- Background Overlay -->
+    <div className="absolute inset-0 bg-indigo-700 opacity-20 z-0"></div>
+    
+
+    <div className="container mx-auto px-4 relative z-10">
+      <div className="max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Start Building Powerful AI Solutions Today</h2>
+            <p className="text-indigo-100 text-lg mb-8">Join thousands of developers who are creating and deploying AI prompts with just a few clicks. No coding experience required.</p>
+            
+            <div className="space-y-6">
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div className="ml-3">
+                  <p className="text-white">Create your first API endpoint in minutes, not days</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div className="ml-3">
+                  <p className="text-white">Test and refine prompts with real-time feedback</p>
+                </div>
+              </div>
+              
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-indigo-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div className="ml-3">
+                  <p className="text-white">Seamlessly integrate AI into your apps and services</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-10">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button id="open-signup-modal" className="px-6 py-3 bg-white text-indigo-700 rounded-md font-medium hover:bg-indigo-50 transition-colors duration-300 shadow-sm">
+                  Get Started Free
+                </button>
+                <a href="#pricing" className="px-6 py-3 border border-white text-white rounded-md font-medium hover:bg-indigo-700 transition-colors duration-300 text-center">
+                  View Pricing
+                </a>
+              </div>
+              <p className="text-indigo-200 text-sm mt-4">No credit card required. Start with 5 free prompts.</p>
+            </div>
+          </div>
+          
+        
+          <div className="hidden lg:block">
+            <img 
+              src="https://images.unsplash.com/photo-1484981138541-3d074aa97716?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTI1MjBkZXZlbG9wZXIlMjUyMHRlc3RpbmclMjUyMEFJJTI1MjBwcm9tcHRzJTI1MjBvbiUyNTIwbGFwdG9wJTI1MjBkYXNoYm9hcmQlMjUyMGZ1dHVyaXN0aWMlMjUyMGludGVyZmFjZSUyNTIwY2xlYW4lMjUyMHdvcmtzcGFjZSUyNTIwZHluYW1pYyUyNTIwbGlnaHRpbmclMjUyMG1vdGl2YXRpb25hbCUyNTIwdGVjaCUyNTIwYXRtb3NwaGVyZSUyNTIwaGlnaCUyNTIwcmVzb2x1dGlvbnxlbnwwfDB8fHwxNzQ0NzQzMzQxfDA&ixlib=rb-4.0.3&q=80&w=1080?q=80"
+              alt="Professional workspace with a person working on laptop"
+              onerror="this.onerror=null; this.src='https://placehold.co/600x400'"
+              className="w-full h-auto rounded-lg shadow-lg transform translate-y-4 hover:translate-y-0 transition-transform duration-500"
+              width="5760"
+              height="3840"
+            >
+            <p className="text-xs text-indigo-200 mt-2 text-right">Photo by Brooke Lark</p>
+          </div>
+        </div>
+        
+        <!-- Logos Section -->
+        <div className="mt-20 pt-10 border-t border-indigo-500">
+          <div className="text-center">
+            <p className="text-indigo-200 mb-6">Trusted by innovative companies worldwide</p>
+            <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+              <div className="flex items-center text-white font-semibold text-xl">Microsoft</div>
+              <div className="flex items-center text-white font-semibold text-xl">Stripe</div>
+              <div className="flex items-center text-white font-semibold text-xl">Shopify</div>
+              <div className="flex items-center text-white font-semibold text-xl">Adobe</div>
+              <div className="flex items-center text-white font-semibold text-xl">Airbnb</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Sign Up Modal -->
+  <div id="signup-modal" className="fixed inset-0 z-50 overflow-y-auto hidden" aria-modal="true" aria-hidden="true">
+    <div className="flex items-center justify-center min-h-screen p-4">
+      <!-- Backdrop -->
+      <div id="modal-backdrop" className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+      
+      <!-- Modal Content -->
+      <div className="relative bg-white rounded-xl max-w-md w-full mx-auto shadow-xl" role="dialog">
+        <div className="absolute top-4 right-4">
+          <button id="close-modal" className="text-neutral-500 hover:text-neutral-700 focus:outline-none" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-4">Get Started with PromptAPI</h3>
+          <p className="text-neutral-600 mb-6">Create your free account and start building AI solutions today. No credit card required.</p>
+          
+          <form id="signup-form" className="space-y-4">
+            <div>
+              <label for="full-name" className="block text-sm font-medium text-neutral-700 mb-1">Full Name</label>
+              <input type="text" id="full-name" name="full-name" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            
+            <div>
+              <label for="email" className="block text-sm font-medium text-neutral-700 mb-1">Work Email</label>
+              <input type="email" id="email" name="email" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            
+            <div>
+              <label for="password" className="block text-sm font-medium text-neutral-700 mb-1">Password</label>
+              <input type="password" id="password" name="password" className="w-full p-2 border border-neutral-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500" required>
+              <p className="text-xs text-neutral-500 mt-1">Must be at least 8 characters with 1 number and 1 special character.</p>
+            </div>
+            
+            <div className="flex items-start">
+              <div className="flex items-center h-5">
+                <input id="terms" name="terms" type="checkbox" className="h-4 w-4 text-indigo-600 border-neutral-300 rounded focus:ring-indigo-500" required>
+              </div>
+              <div className="ml-3 text-sm">
+                <label for="terms" className="text-neutral-600">I agree to the <a href="#" className="text-indigo-600 hover:text-indigo-500">Terms of Service</a> and <a href="#" className="text-indigo-600 hover:text-indigo-500">Privacy Policy</a></label>
+              </div>
+            </div>
+            
+            <button type="submit" className="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md transition-colors duration-200">
+              Create Free Account
+            </button>
+          </form>
+          
+          <div className="mt-6 text-center">
+            <p className="text-sm text-neutral-600">Already have an account? <a href="#" className="text-indigo-600 hover:text-indigo-500 font-medium">Sign in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // Modal Functionality
+    const modal = document.getElementById('signup-modal');
+    const modalBackdrop = document.getElementById('modal-backdrop');
+    const openModalButton = document.getElementById('open-signup-modal');
+    const closeModalButton = document.getElementById('close-modal');
+    const signupForm = document.getElementById('signup-form');
+    
+    // Store last focused element
+    let lastFocusedElement = null;
+    
+    // Open modal function
+    function openModal() {
+      // Store the element that had focus
+      lastFocusedElement = document.activeElement;
+      
+      // Show modal with a transition
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modalBackdrop.classList.add('opacity-100');
+      }, 10);
+      
+      // Add overflow hidden to body to prevent scrolling
+      document.body.style.overflow = 'hidden';
+      
+      // Set focus to first input
+      document.getElementById('full-name').focus();
+      
+      // Set aria attributes
+      modal.setAttribute('aria-hidden', 'false');
+    }
+    
+    // Close modal function
+    function closeModal() {
+      // Hide modal with a transition
+      modalBackdrop.classList.remove('opacity-100');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 200);
+      
+      // Remove overflow hidden from body
+      document.body.style.overflow = '';
+      
+      // Return focus to the element that had it before the modal was opened
+      if (lastFocusedElement) {
+        lastFocusedElement.focus();
+      }
+      
+      // Set aria attributes
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    
+    // Add event listeners
+    if (openModalButton) {
+      openModalButton.addEventListener('click', openModal);
+    }
+    
+    if (closeModalButton) {
+      closeModalButton.addEventListener('click', closeModal);
+    }
+    
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener('click', closeModal);
+    }
+    
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+    
+    // Focus trap inside modal
+    if (modal) {
+      modal.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+          const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+          const firstElement = focusableElements[0];
+          const lastElement = focusableElements[focusableElements.length - 1];
+          
+          // If shift+tab and focus is on first element, move to last element
+          if (e.shiftKey) {
+            if (document.activeElement === firstElement) {
+              lastElement.focus();
+              e.preventDefault();
+            }
+          // If tab and focus is on last element, move to first element
+          } else {
+            if (document.activeElement === lastElement) {
+              firstElement.focus();
+              e.preventDefault();
+            }
+          }
+        }
+      });
+    }
+    
+    // Form submission handler (prevent default for demo)
+    if (signupForm) {
+      signupForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Account creation simulation complete! In a real implementation, this would create your account and redirect to the dashboard.');
+        closeModal();
+      });
+    }
+  </script>
+</div>
+
+    </div>
+  )
+}
