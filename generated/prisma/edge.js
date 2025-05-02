@@ -203,7 +203,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/davidparker/nexprompt-ai-api/generated/prisma",
+      "value": "/workspace/nexprompt-ai-api/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -212,12 +212,12 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "darwin",
+        "value": "debian-openssl-3.0.x",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/davidparker/nexprompt-ai-api/prisma/schema.prisma",
+    "sourceFilePath": "/workspace/nexprompt-ai-api/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -231,6 +231,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": true,
   "inlineDatasources": {
     "db": {
       "url": {

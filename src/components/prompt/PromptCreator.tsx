@@ -19,7 +19,9 @@ export default function PromptCreator() {
     parameters: [],
     rateLimit: 100,
     apiKeyRequired: true,
-    accessControl: { type: 'private' },
+    accessCont
+    
+    rol: { type: 'private' },
     promptTemplate: ''
   });
   

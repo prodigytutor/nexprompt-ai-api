@@ -21,7 +21,7 @@ const PromptPage = (props: Props) => {
               <Slash />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
-              <Link href="/dashboard/voice-cloning">Voice Cloning</Link>
+              <Link href="/dashboard/voice-cloning">Prompt Management</Link>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>

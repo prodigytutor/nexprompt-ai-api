@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { Visualizer } from "@/components/dashboard/visualizer";
 import PromptList from "../prompt/PromptList";
+import Link from "next/link";
 
 export const PromptDashboard = () => {
   const [selectedVoice, setSelectedVoice] = useState<string>("");
@@ -36,7 +37,7 @@ export const PromptDashboard = () => {
       <Card className="mx-auto border-none shadow-none  ">
         <CardHeader>
           <CardTitle className="text-3xl font-bold">
-           Prompt Dashboard
+           Prompting Dashboard
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -62,11 +63,13 @@ export const PromptDashboard = () => {
             <PromptList />
 
             <div className="flex justify-end gap-4">
+              <Link href="/dashboard/prompts/builder">
               <Button onClick={handleGenerate}>
                 <Volume2 className="mr-2 h-4 w-4" /> New Prompt
               </Button>
+              </Link>
               <Button onClick={handleGenerate}>
-                <PenIcon className="mr-2 h-4 w-4" /> Generate Random Story
+                <PenIcon className="mr-2 h-4 w-4" /> Spare Button #1
               </Button>
             </div>
           </div>

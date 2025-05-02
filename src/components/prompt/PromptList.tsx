@@ -12,7 +12,9 @@ const PromptList = () => {
   React.useEffect(() => {
     const fetchPrompts = async () => {
       try {
+        console.log("Prompt List", "In useEffect")
         const response = await fetch('/api/prompts');
+        console.log("Response", response)
         if (!response.ok) {
           throw new Error('Failed to fetch prompts');
         }
