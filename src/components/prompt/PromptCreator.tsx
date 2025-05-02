@@ -10,6 +10,7 @@ export default function PromptCreator() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [promptData, setPromptData] = useState<PromptData>({
+    id: '',
     name: '',
     description: '',
     promptText: '',
@@ -19,9 +20,7 @@ export default function PromptCreator() {
     parameters: [],
     rateLimit: 100,
     apiKeyRequired: true,
-    accessCont
-    
-    rol: { type: 'private' },
+    accessControl: { type: 'private' },
     promptTemplate: ''
   });
   
@@ -38,6 +37,7 @@ export default function PromptCreator() {
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   const validateForm = () => {
+    console.log("Validating form")
     const newErrors: Record<string, string> = {};
     if (!promptData.name) newErrors.name = 'Name is required';
     if (!promptData.promptText) newErrors.promptText = 'Prompt text is required';
@@ -49,15 +49,16 @@ export default function PromptCreator() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+    console.log("submitting form");
     if (!validateForm()) return;
     
     setIsSubmitting(true);
     try {
-      console.log("In  here", promptData);
-      let response = await axios.post('/api/prompt', promptData);
+      console.log("In  here submitting form", promptData);
+      let response = await axios.post('/api/prompts', promptData);
       router.push(`/prompt-detail/${response.data.id}`);
     } catch (err: any) {
+      console.log("Error in submit", err)
       if (err.response?.data?.errors) {
         setErrors(err.response.data.errors);
       } else {

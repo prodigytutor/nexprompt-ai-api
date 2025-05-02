@@ -3,7 +3,7 @@
 import prisma from '@/lib/db';
 import { Prompt } from '../../../generated/prisma';
 // Define the CreatePromptData type
-type CreatePromptData = {
+export type createPromptData = {
   userId: string;
   name: string;
   description: string;
@@ -35,7 +35,7 @@ async function verifyPromptOwnership(promptId: string, userId: string): Promise<
 }
 
 // Create a new prompt
-export async function createPrompt(data: CreatePromptData): Promise<Prompt> {
+export async function createPrompt(data: createPromptData): Promise<Prompt> {
   try {
     const newPrompt = await prisma.prompt.create({
       data: {

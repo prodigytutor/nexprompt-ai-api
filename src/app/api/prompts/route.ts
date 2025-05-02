@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server"
 import db from "@/lib/db"
+import {createPrompt, createPromptData}  from "@/lib/actions/prompts"
 import { auth, currentUser } from '@clerk/nextjs/server'
 import getPromp from "next/dist/build/webpack-config"
 import { getPromptsForUser } from "@/lib/actions/prompts"
@@ -10,12 +11,12 @@ export async function POST(req: Request) {
      }
     try {
         const body = await req.json()
-        const { messages } = body
+        const { cpd: createPromptData } = body
     
-        if (!messages) {
-        return new Response("Messages are required", { status: 400 })
+        if (!cpd) {
+        return new Response("Prompt data is required", { status: 400 })
         }
-    
+        const newPrompt = createPrompt( {data: createPromptData})
         // const response = await openai.chat.completions.create({
         //   model: "gpt-4-1106-preview",
         //   messages,
