@@ -69,28 +69,10 @@ export default function Sidebar() {
               <li className="flex items-center space-x-2">
                 <MicIcon className="w-4 h-4" />
                 <Link
-                  href="/dashboard/voice-cloning"
+                  href="/dashboard/analytics"
                   className="text-muted-foreground"
                 >
                   Analytics
-                </Link>
-              </li>
-              <li className="flex items-center space-x-2">
-                <MusicIcon className="w-4 h-4" />
-                <Link
-                  href="/dashboard/generate-music"
-                  className="text-muted-foreground"
-                >
-                  Generate Music
-                </Link>
-              </li>
-              <li className="flex items-center space-x-2">
-                <BookIcon className="w-4 h-4" />
-                <Link
-                  href="/dashboard/generate-story"
-                  className="text-muted-foreground"
-                >
-                  Generate Story
                 </Link>
               </li>
             </ul>

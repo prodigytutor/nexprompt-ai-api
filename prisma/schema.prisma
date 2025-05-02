@@ -36,6 +36,7 @@ model UserSubscription {
 
 model Prompt {
   id                String         @id @default(cuid())
+  userId            String
   name              String
   description       String?
   promptText        String
@@ -46,10 +47,13 @@ model Prompt {
   apiKeyRequired    Boolean        @default(true)
   aiProvider        String         @default("openai")
   aiModel           String
+  customDomain      String?        @unique // Add the new custom domain field
   versions          PromptVersion[]
   logs              AnalyticsLog[]
   createdAt         DateTime       @default(now())
   updatedAt         DateTime       @updatedAt
+
+  @@index([userId])
 }
 
 model PromptVersion {
