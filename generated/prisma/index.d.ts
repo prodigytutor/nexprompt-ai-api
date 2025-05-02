@@ -3430,6 +3430,8 @@ export namespace Prisma {
     apiKeyRequired: boolean | null
     aiProvider: string | null
     aiModel: string | null
+    url: string | null
+    userId: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -3444,6 +3446,8 @@ export namespace Prisma {
     apiKeyRequired: boolean | null
     aiProvider: string | null
     aiModel: string | null
+    url: string | null
+    userId: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -3460,6 +3464,8 @@ export namespace Prisma {
     apiKeyRequired: number
     aiProvider: number
     aiModel: number
+    url: number
+    userId: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -3484,6 +3490,8 @@ export namespace Prisma {
     apiKeyRequired?: true
     aiProvider?: true
     aiModel?: true
+    url?: true
+    userId?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -3498,6 +3506,8 @@ export namespace Prisma {
     apiKeyRequired?: true
     aiProvider?: true
     aiModel?: true
+    url?: true
+    userId?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -3514,6 +3524,8 @@ export namespace Prisma {
     apiKeyRequired?: true
     aiProvider?: true
     aiModel?: true
+    url?: true
+    userId?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -3617,6 +3629,8 @@ export namespace Prisma {
     apiKeyRequired: boolean
     aiProvider: string
     aiModel: string
+    url: string
+    userId: string
     createdAt: Date
     updatedAt: Date
     _count: PromptCountAggregateOutputType | null
@@ -3652,6 +3666,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: boolean
     aiModel?: boolean
+    url?: boolean
+    userId?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     versions?: boolean | Prompt$versionsArgs<ExtArgs>
@@ -3671,6 +3687,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: boolean
     aiModel?: boolean
+    url?: boolean
+    userId?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["prompt"]>
@@ -3687,6 +3705,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: boolean
     aiModel?: boolean
+    url?: boolean
+    userId?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["prompt"]>
@@ -3703,11 +3723,13 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: boolean
     aiModel?: boolean
+    url?: boolean
+    userId?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type PromptOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "description" | "promptText" | "responseFormat" | "parameters" | "rateLimit" | "accessControl" | "apiKeyRequired" | "aiProvider" | "aiModel" | "createdAt" | "updatedAt", ExtArgs["result"]["prompt"]>
+  export type PromptOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "description" | "promptText" | "responseFormat" | "parameters" | "rateLimit" | "accessControl" | "apiKeyRequired" | "aiProvider" | "aiModel" | "url" | "userId" | "createdAt" | "updatedAt", ExtArgs["result"]["prompt"]>
   export type PromptInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     versions?: boolean | Prompt$versionsArgs<ExtArgs>
     logs?: boolean | Prompt$logsArgs<ExtArgs>
@@ -3734,6 +3756,8 @@ export namespace Prisma {
       apiKeyRequired: boolean
       aiProvider: string
       aiModel: string
+      url: string
+      userId: string
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["prompt"]>
@@ -4172,6 +4196,8 @@ export namespace Prisma {
     readonly apiKeyRequired: FieldRef<"Prompt", 'Boolean'>
     readonly aiProvider: FieldRef<"Prompt", 'String'>
     readonly aiModel: FieldRef<"Prompt", 'String'>
+    readonly url: FieldRef<"Prompt", 'String'>
+    readonly userId: FieldRef<"Prompt", 'String'>
     readonly createdAt: FieldRef<"Prompt", 'DateTime'>
     readonly updatedAt: FieldRef<"Prompt", 'DateTime'>
   }
@@ -7870,6 +7896,8 @@ export namespace Prisma {
     apiKeyRequired: 'apiKeyRequired',
     aiProvider: 'aiProvider',
     aiModel: 'aiModel',
+    url: 'url',
+    userId: 'userId',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -8171,6 +8199,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFilter<"Prompt"> | boolean
     aiProvider?: StringFilter<"Prompt"> | string
     aiModel?: StringFilter<"Prompt"> | string
+    url?: StringFilter<"Prompt"> | string
+    userId?: StringFilter<"Prompt"> | string
     createdAt?: DateTimeFilter<"Prompt"> | Date | string
     updatedAt?: DateTimeFilter<"Prompt"> | Date | string
     versions?: PromptVersionListRelationFilter
@@ -8189,6 +8219,8 @@ export namespace Prisma {
     apiKeyRequired?: SortOrder
     aiProvider?: SortOrder
     aiModel?: SortOrder
+    url?: SortOrder
+    userId?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     versions?: PromptVersionOrderByRelationAggregateInput
@@ -8210,6 +8242,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFilter<"Prompt"> | boolean
     aiProvider?: StringFilter<"Prompt"> | string
     aiModel?: StringFilter<"Prompt"> | string
+    url?: StringFilter<"Prompt"> | string
+    userId?: StringFilter<"Prompt"> | string
     createdAt?: DateTimeFilter<"Prompt"> | Date | string
     updatedAt?: DateTimeFilter<"Prompt"> | Date | string
     versions?: PromptVersionListRelationFilter
@@ -8228,6 +8262,8 @@ export namespace Prisma {
     apiKeyRequired?: SortOrder
     aiProvider?: SortOrder
     aiModel?: SortOrder
+    url?: SortOrder
+    userId?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: PromptCountOrderByAggregateInput
@@ -8252,6 +8288,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolWithAggregatesFilter<"Prompt"> | boolean
     aiProvider?: StringWithAggregatesFilter<"Prompt"> | string
     aiModel?: StringWithAggregatesFilter<"Prompt"> | string
+    url?: StringWithAggregatesFilter<"Prompt"> | string
+    userId?: StringWithAggregatesFilter<"Prompt"> | string
     createdAt?: DateTimeWithAggregatesFilter<"Prompt"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"Prompt"> | Date | string
   }
@@ -8563,6 +8601,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: string
     aiModel: string
+    url: string
+    userId: string
     createdAt?: Date | string
     updatedAt?: Date | string
     versions?: PromptVersionCreateNestedManyWithoutPromptInput
@@ -8581,6 +8621,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: string
     aiModel: string
+    url: string
+    userId: string
     createdAt?: Date | string
     updatedAt?: Date | string
     versions?: PromptVersionUncheckedCreateNestedManyWithoutPromptInput
@@ -8599,6 +8641,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFieldUpdateOperationsInput | boolean
     aiProvider?: StringFieldUpdateOperationsInput | string
     aiModel?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     versions?: PromptVersionUpdateManyWithoutPromptNestedInput
@@ -8617,6 +8661,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFieldUpdateOperationsInput | boolean
     aiProvider?: StringFieldUpdateOperationsInput | string
     aiModel?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     versions?: PromptVersionUncheckedUpdateManyWithoutPromptNestedInput
@@ -8635,6 +8681,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: string
     aiModel: string
+    url: string
+    userId: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -8651,6 +8699,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFieldUpdateOperationsInput | boolean
     aiProvider?: StringFieldUpdateOperationsInput | string
     aiModel?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -8667,6 +8717,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFieldUpdateOperationsInput | boolean
     aiProvider?: StringFieldUpdateOperationsInput | string
     aiModel?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -9141,6 +9193,8 @@ export namespace Prisma {
     apiKeyRequired?: SortOrder
     aiProvider?: SortOrder
     aiModel?: SortOrder
+    url?: SortOrder
+    userId?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -9159,6 +9213,8 @@ export namespace Prisma {
     apiKeyRequired?: SortOrder
     aiProvider?: SortOrder
     aiModel?: SortOrder
+    url?: SortOrder
+    userId?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -9173,6 +9229,8 @@ export namespace Prisma {
     apiKeyRequired?: SortOrder
     aiProvider?: SortOrder
     aiModel?: SortOrder
+    url?: SortOrder
+    userId?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -9814,6 +9872,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: string
     aiModel: string
+    url: string
+    userId: string
     createdAt?: Date | string
     updatedAt?: Date | string
     logs?: AnalyticsLogCreateNestedManyWithoutPromptInput
@@ -9831,6 +9891,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: string
     aiModel: string
+    url: string
+    userId: string
     createdAt?: Date | string
     updatedAt?: Date | string
     logs?: AnalyticsLogUncheckedCreateNestedManyWithoutPromptInput
@@ -9864,6 +9926,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFieldUpdateOperationsInput | boolean
     aiProvider?: StringFieldUpdateOperationsInput | string
     aiModel?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     logs?: AnalyticsLogUpdateManyWithoutPromptNestedInput
@@ -9881,6 +9945,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFieldUpdateOperationsInput | boolean
     aiProvider?: StringFieldUpdateOperationsInput | string
     aiModel?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     logs?: AnalyticsLogUncheckedUpdateManyWithoutPromptNestedInput
@@ -9898,6 +9964,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: string
     aiModel: string
+    url: string
+    userId: string
     createdAt?: Date | string
     updatedAt?: Date | string
     versions?: PromptVersionCreateNestedManyWithoutPromptInput
@@ -9915,6 +9983,8 @@ export namespace Prisma {
     apiKeyRequired?: boolean
     aiProvider?: string
     aiModel: string
+    url: string
+    userId: string
     createdAt?: Date | string
     updatedAt?: Date | string
     versions?: PromptVersionUncheckedCreateNestedManyWithoutPromptInput
@@ -9948,6 +10018,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFieldUpdateOperationsInput | boolean
     aiProvider?: StringFieldUpdateOperationsInput | string
     aiModel?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     versions?: PromptVersionUpdateManyWithoutPromptNestedInput
@@ -9965,6 +10037,8 @@ export namespace Prisma {
     apiKeyRequired?: BoolFieldUpdateOperationsInput | boolean
     aiProvider?: StringFieldUpdateOperationsInput | string
     aiModel?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     versions?: PromptVersionUncheckedUpdateManyWithoutPromptNestedInput

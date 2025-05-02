@@ -149,6 +149,8 @@ exports.Prisma.PromptScalarFieldEnum = {
   apiKeyRequired: 'apiKeyRequired',
   aiProvider: 'aiProvider',
   aiModel: 'aiModel',
+  url: 'url',
+  userId: 'userId',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };

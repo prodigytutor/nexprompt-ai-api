@@ -1,8 +1,10 @@
 import { NextResponse } from "next/server"
 import db from "@/lib/db"
 import { auth, currentUser } from '@clerk/nextjs/server'
+import getPromp from "next/dist/build/webpack-config"
+import { getPromptsForUser } from "@/lib/actions/prompts"
 export async function POST(req: Request) {
-     const { userId } = auth()
+     const { userId } = await auth()
      if (!userId) {
          return new Response("Unauthorized", { status: 401 })
      }
@@ -26,13 +28,14 @@ export async function POST(req: Request) {
     }
     }
  export async function GET(req: Request) {
-    const { userId } = auth()
+    const { userId } = await auth()
     if (!userId) {
         return new Response("Unauthorized", { status: 401 })
     }
     try {
        // const { userId } = auth()
-        const prompt = await db.prompt.findMany()
+       console.log("User ID: {in the get code", userId)  
+        const prompt = await getPromptsForUser(userId) //await db.prompt.findMany()
         if (!prompt) {
             return new Response("Prompt not found", { status: 404 })
         }
