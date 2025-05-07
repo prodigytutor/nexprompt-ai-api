@@ -11,8 +11,8 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  url       = "postgresql://postgres.tcrsqtazyjrbiehrowuk:AngelBlueMissy3@aws-0-us-east-2.pooler.supabase.com:6543/postgres?pgbouncer=true"
-  directUrl = "postgresql://postgres.tcrsqtazyjrbiehrowuk:AngelBlueMissy3@aws-0-us-east-2.pooler.supabase.com:5432/postgres&sslmode=reqire"
+  url       = "postgresql://prisma.zoleidtxjiovgvfwbkya:AngelBlueMissy13579@aws-0-us-east-2.pooler.supabase.com:6543/postgres?pgbouncer=true"
+  directUrl = "postgresql://prisma.zoleidtxjiovgvfwbkya:AngelBlueMissy13579@aws-0-us-east-2.pooler.supabase.com:5432/postgres"
 }
 
 model UserApiLimit {
@@ -21,6 +21,11 @@ model UserApiLimit {
   count     Int      @default(0)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+model test {
+  id   String @id @default(cuid())
+  name String
 }
 
 model UserSubscription {
@@ -37,16 +42,17 @@ model Prompt {
   name           String
   description    String?
   promptText     String
-  responseFormat String          @default("json")
-  parameters     Json
-  rateLimit      Int             @default(100)
+  responseFormat String?         @default("json")
+  parameters     Json?
+  rateLimit      Int?            @default(100)
   accessControl  Json?
-  apiKeyRequired Boolean         @default(true)
-  aiProvider     String          @default("openai")
-  aiModel        String
+  apiKeyRequired Boolean?        @default(true)
+  aiProvider     String?         @default("openai")
+  aiModel        String?
   versions       PromptVersion[]
   logs           AnalyticsLog[]
-  url            String
+  url            String?
+  customDomain   String?
   userId         String
   createdAt      DateTime        @default(now())
   updatedAt      DateTime        @updatedAt
@@ -80,4 +86,56 @@ model AnalyticsLog {
   durationMs  Int
 
   prompt Prompt @relation(fields: [promptId], references: [id])
+}
+
+model Content {
+  id        String   @id
+  title     String
+  body      String
+  channel   String
+  type      String
+  userId    String
+  projectId String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime
+  Project   Project? @relation(fields: [projectId], references: [id])
+  User      User     @relation(fields: [userId], references: [id])
+}
+
+model Project {
+  id              String        @id
+  name            String
+  userId          String
+  audience        String
+  brand           String?
+  tone            String?
+  keywords        String?
+  channels        String?
+  format          String?
+  existingContent String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime
+  status          ProjectStatus
+  avatar          String?
+  Content         Content[]
+  User            User          @relation(fields: [userId], references: [id])
+}
+
+model User {
+  id        String    @id
+  email     String    @unique
+  password  String
+  name      String?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime
+  Content   Content[]
+  Project   Project[]
+}
+
+enum ProjectStatus {
+  ACTIVE
+  INACTIVE
+  COMPLETED
+  CANCELLED
+  DRAFT
 }

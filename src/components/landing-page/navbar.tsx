@@ -1,3 +1,4 @@
+"use client"
 import { Button, buttonVariants } from "@/components/ui/button";
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import {
@@ -12,13 +13,15 @@ import { Menu } from "lucide-react";
 import { ThemeToggle } from "../theme-toggle";
 import Link from "next/link";
 import Image from "next/image";
+import { useUser } from "@clerk/nextjs";
 
 const Navbar = () => {
+  const user = useUser();
   return (
     <section className="py-6 sticky top-0 z-50 bg-background">
       <div className="container">
         <nav className="hidden justify-between lg:flex">
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2a">
             <div className="flex items-center gap-2">
               <Image width={16} height={16} src="/logo.png" className="w-8" alt="logo" />
               <span className="text-xl font-bold">TheAI</span>
@@ -74,6 +77,24 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+          {user.isSignedIn && ( 
+            <div className="flex items-center gap-2">
+              <Link
+                href="/dashboard"
+                className={buttonVariants({ variant: "outline" })}
+              >
+                Dashboard
+              </Link>
+              <Link
+                href="/sign-out"
+                className={buttonVariants({ variant: "outline" })}
+              >
+                Sign out
+              </Link>
+            </div>
+          )}
+          {!user.isSignedIn && (
+            
           <div className="flex gap-2">
             <Link
               href="/sign-in"
@@ -89,6 +110,7 @@ const Navbar = () => {
             </Link>
             <ThemeToggle />
           </div>
+          )}
         </nav>
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">

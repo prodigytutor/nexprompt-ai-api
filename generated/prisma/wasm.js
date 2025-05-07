@@ -128,6 +128,11 @@ exports.Prisma.UserApiLimitScalarFieldEnum = {
   updatedAt: 'updatedAt'
 };
 
+exports.Prisma.TestScalarFieldEnum = {
+  id: 'id',
+  name: 'name'
+};
+
 exports.Prisma.UserSubscriptionScalarFieldEnum = {
   id: 'id',
   userId: 'userId',
@@ -150,6 +155,7 @@ exports.Prisma.PromptScalarFieldEnum = {
   aiProvider: 'aiProvider',
   aiModel: 'aiModel',
   url: 'url',
+  customDomain: 'customDomain',
   userId: 'userId',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
@@ -181,17 +187,55 @@ exports.Prisma.AnalyticsLogScalarFieldEnum = {
   durationMs: 'durationMs'
 };
 
+exports.Prisma.ContentScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  body: 'body',
+  channel: 'channel',
+  type: 'type',
+  userId: 'userId',
+  projectId: 'projectId',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.ProjectScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  userId: 'userId',
+  audience: 'audience',
+  brand: 'brand',
+  tone: 'tone',
+  keywords: 'keywords',
+  channels: 'channels',
+  format: 'format',
+  existingContent: 'existingContent',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt',
+  status: 'status',
+  avatar: 'avatar'
+};
+
+exports.Prisma.UserScalarFieldEnum = {
+  id: 'id',
+  email: 'email',
+  password: 'password',
+  name: 'name',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
 };
 
-exports.Prisma.JsonNullValueInput = {
+exports.Prisma.NullableJsonNullValueInput = {
+  DbNull: Prisma.DbNull,
   JsonNull: Prisma.JsonNull
 };
 
-exports.Prisma.NullableJsonNullValueInput = {
-  DbNull: Prisma.DbNull,
+exports.Prisma.JsonNullValueInput = {
   JsonNull: Prisma.JsonNull
 };
 
@@ -210,15 +254,25 @@ exports.Prisma.JsonNullValueFilter = {
   JsonNull: Prisma.JsonNull,
   AnyNull: Prisma.AnyNull
 };
-
+exports.ProjectStatus = exports.$Enums.ProjectStatus = {
+  ACTIVE: 'ACTIVE',
+  INACTIVE: 'INACTIVE',
+  COMPLETED: 'COMPLETED',
+  CANCELLED: 'CANCELLED',
+  DRAFT: 'DRAFT'
+};
 
 exports.Prisma.ModelName = {
   UserApiLimit: 'UserApiLimit',
+  test: 'test',
   UserSubscription: 'UserSubscription',
   Prompt: 'Prompt',
   PromptVersion: 'PromptVersion',
   ApiKey: 'ApiKey',
-  AnalyticsLog: 'AnalyticsLog'
+  AnalyticsLog: 'AnalyticsLog',
+  Content: 'Content',
+  Project: 'Project',
+  User: 'User'
 };
 
 /**

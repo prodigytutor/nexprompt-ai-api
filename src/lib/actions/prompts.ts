@@ -15,6 +15,7 @@ export type createPromptData = {
   apiKeyRequired: boolean;
   aiProvider: string;
   aiModel: string;
+  url: string;
 };
 
 // Utility function to check prompt ownership
@@ -50,7 +51,7 @@ export async function createPrompt(data: createPromptData): Promise<Prompt> {
         apiKeyRequired: data.apiKeyRequired,
         aiProvider: data.aiProvider,
         aiModel: data.aiModel,
-        url: '', // Add a valid URL value here
+        url: data.url, // Add a valid URL value here
       },
     });
     return newPrompt;
@@ -104,10 +105,7 @@ export async function deletePrompt(promptId: string, userId: string): Promise<Pr
 export async function getPromptsForUser(userId: string): Promise<Prompt[]> {
   try {
     console.log("User ID: {in the server action}", userId);
-    const prompts = await prisma.prompt.findMany({
-      where: { userId: userId },
-      orderBy: { createdAt: 'desc' },
-    });
+    const prompts = await prisma.prompt.findMany();
     return prompts;
   } catch (error) {
     if (error instanceof Error) {

@@ -27,20 +27,19 @@ const Hero = () => {
         size={2}
         refresh
       />
-      <div className="container">
-        <div className="mx-auto flex max-w-5xl flex-col items-center">
+      <div id="hero" className="relative overflow-hidden bg-neutral-800 py-16 md:py-24">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="z-10 flex flex-col items-center gap-6 text-center">
-            <Image width={32} height={16} src="/logo.png" alt="logo" className="h-16" />
-            <Badge>NexPrompt API</Badge>
-            <div>
-              <h1 className="mb-6 text-2xl font-bold lg:text-6xl py-2 overflow-visible">
+            <div className="text-white space-y-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Define, Test, Deploy AI Prompts in Minutes{" "}
                 <span className="text-lg bg-gradient-to-r from-[#e03cbf] via-[#bb81eb] to-[#bd15e6] inline-block text-transparent bg-clip-text py-2">
                 Create powerful AI prompts and instantly generate API endpoints. 
               Test, iterate, and deploy without writing a single line of code. 
                 </span>
               </h1>
-              <p className="text-muted-foreground lg:text-xl">
+              {/* <p className="text-muted-foreground lg:text-xl">
               Forget juggling complex backend code and API infrastructure 
               just to integrate AI. Our platform streamlines the entire process, 
               putting the focus back on the core of AI interaction: the prompt. 
@@ -51,7 +50,7 @@ const Hero = () => {
               tweak the prompt, and redeploy immediately. It's the simplest way to embed 
               sophisticated AI capabilities into your applications and workflows, 
               dramatically reducing development time and technical hurdles.
-              </p>
+              </p> */}
             </div>
             <div className="mt-4 flex justify-center gap-2">
               <Button>Get Started</Button>
@@ -104,7 +103,56 @@ const Hero = () => {
               </div>
             </div>
           </div>
+         
+          <div className="relative">
+          <div className="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-700 shadow-lg">
+            <div className="p-4 bg-neutral-800 border-b border-neutral-700 flex items-center">
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 rounded-full bg-neutral-500"></div>
+                <div className="w-3 h-3 rounded-full bg-neutral-500"></div>
+                <div className="w-3 h-3 rounded-full bg-neutral-500"></div>
+              </div>
+              <div className="mx-auto text-neutral-400 text-sm">Prompt API Dashboard</div>
+            </div>
+            <div className="p-6">
+              <div className="mb-4">
+                <div className="text-neutral-400 text-sm mb-2">Define Your Prompt</div>
+                <div className="bg-neutral-700 p-3 rounded-md text-neutral-200 text-sm font-mono">
+                  You are a customer service AI. Help the user with their  issue related to . Be concise and solution-oriented.
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex justify-between mb-2">
+                  <span className="text-neutral-400 text-sm">Test Parameters</span>
+                  <span className="text-indigo-400 text-sm">Run Test</span>
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="bg-neutral-700 p-2 rounded-md">
+                    <div className="text-neutral-400 text-xs">product</div>
+                    <div className="text-neutral-200 text-sm">SmartHome Hub</div>
+                  </div>
+                  <div className="bg-neutral-700 p-2 rounded-md">
+                    <div className="text-neutral-400 text-xs">issue_type</div>
+                    <div className="text-neutral-200 text-sm">connectivity</div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-between p-3 bg-indigo-900 bg-opacity-30 rounded-md border border-indigo-700">
+                <div className="text-indigo-300 text-sm">API Endpoint Generated</div>
+                <div className="text-indigo-300 text-sm font-mono">/api/v1/prompt/cs-helper</div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="absolute -bottom-6 -right-6 -z-10 w-64 h-64 bg-indigo-600 bg-opacity-20 rounded-full blur-3xl"></div>
+          <div className="absolute -top-6 -left-6 -z-10 w-64 h-64 bg-purple-600 bg-opacity-20 rounded-full blur-3xl"></div>
         </div>
+
+         
+          <div className="hidden md:flex justify-center">
+        </div>
+      </div>
+      </div>
       </div>
     </section>
   );

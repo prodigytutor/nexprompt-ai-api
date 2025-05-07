@@ -776,8 +776,9 @@
 
   <script>
     // Modal functionality
-    const modal = document.getElementById('demo-modal');
+    const demoModal = document.getElementById('demo-modal');
     const showDemoButton = document.getElementById('show-demo-video');
+    // Removed duplicate declaration of closeModalButton
     const closeModalButton = document.getElementById('close-modal');
     const modalBackdrop = document.getElementById('modal-backdrop');
     
@@ -790,7 +791,7 @@
       lastFocusedElement = document.activeElement;
       
       // Show modal
-      modal.classList.remove('hidden');
+      demoModal.classList.remove('hidden');
       
       // Prevent page scrolling
       document.body.style.overflow = 'hidden';
@@ -805,7 +806,7 @@
     // Function to close modal
     function closeModal() {
       // Hide modal
-      modal.classList.add('hidden');
+      demoModal.classList.add('hidden');
       
       // Re-enable page scrolling
       document.body.style.overflow = '';
@@ -1296,20 +1297,20 @@
     });
     
     // Modal functionality
-    const modal = document.getElementById('demo-modal');
-    const modalBackdrop = document.getElementById('modal-backdrop');
-    const closeModalButton = document.getElementById('close-modal');
-    const demoButtons = [
-      document.getElementById('cs-demo-button'),
-      document.getElementById('content-demo-button'),
-      document.getElementById('data-demo-button'),
-      document.getElementById('education-demo-button')
-    ];
-    const demoContent = document.getElementById('demo-content');
-    const modalTitle = document.getElementById('modal-title');
+    // const modal = document.getElementById('demo-modal');
+    // const modalBackdrop = document.getElementById('modal-backdrop');
+    // //const closeModalButton = document.getElementById('close-modal');
+    // const demoButtons = [
+    //   document.getElementById('cs-demo-button'),
+    //   document.getElementById('content-demo-button'),
+    //   document.getElementById('data-demo-button'),
+    //   document.getElementById('education-demo-button')
+    // ];
+    // const demoContent = document.getElementById('demo-content');
+    // const modalTitle = document.getElementById('modal-title');
     
-    // Last focused element before modal opened
-    let lastFocusedElement = null;
+    // // Last focused element before modal opened
+    // let lastFocusedElement = null;
     
     // Function to open modal
     function openModal(title, content) {
@@ -2034,14 +2035,14 @@
     });
     
     // Modal Functionality
-    const modal = document.getElementById('demo-modal');
-    const openModalButton = document.getElementById('schedule-demo-button');
-    const closeModalButton = document.getElementById('close-modal');
-    const modalBackdrop = document.getElementById('modal-backdrop');
-    const demoForm = document.getElementById('demo-form');
+  //   const modal = document.getElementById('demo-modal');
+  //   const openModalButton = document.getElementById('schedule-demo-button');
+  //  // const closeModalButton = document.getElementById('close-modal');
+  //   const modalBackdrop = document.getElementById('modal-backdrop');
+  //   const demoForm = document.getElementById('demo-form');
     
-    // Track last focused element
-    let lastFocusedElement = null;
+  //   // Track last focused element
+  //   let lastFocusedElement = null;
     
     // Function to open modal
     function openModal() {
@@ -2743,16 +2744,16 @@ print(response.json())</code></pre>
   </div>
 
   <script>
-    // Modal Functionality
-    const modal = document.getElementById('example-modal');
-    const modalBackdrop = document.getElementById('modal-backdrop');
-    const openModalButton = document.getElementById('open-code-example');
-    const closeModalButton = document.getElementById('close-modal');
-    const generateButton = document.getElementById('generate-button');
-    const apiResponse = document.getElementById('api-response');
+    // // Modal Functionality
+    // const modal = document.getElementById('example-modal');
+    // const modalBackdrop = document.getElementById('modal-backdrop');
+    // const openModalButton = document.getElementById('open-code-example');
+    // const closeModalButton = document.getElementById('close-modal');
+    // const generateButton = document.getElementById('generate-button');
+    // const apiResponse = document.getElementById('api-response');
     
     // Store last focused element
-    let lastFocusedElement = null;
+   // let lastFocusedElement = null;
     
     // Open modal function
     function openModal() {
@@ -3225,14 +3226,14 @@ print(response.json())</code></pre>
     });
     
     // Modal Functionality
-    const modal = document.getElementById('contact-modal');
-    const modalBackdrop = document.getElementById('modal-backdrop');
-    const openModalButton = document.getElementById('open-contact-modal');
-    const closeModalButton = document.getElementById('close-modal');
-    const supportForm = document.getElementById('support-form');
+    // const modal = document.getElementById('contact-modal');
+    // const modalBackdrop = document.getElementById('modal-backdrop');
+    // const openModalButton = document.getElementById('open-contact-modal');
+    // const closeModalButton = document.getElementById('close-modal');
+    // const supportForm = document.getElementById('support-form');
     
-    // Store last focused element
-    let lastFocusedElement = null;
+    // // Store last focused element
+    // let lastFocusedElement = null;
     
     // Open modal function
     function openModal() {
@@ -3469,14 +3470,14 @@ print(response.json())</code></pre>
   
   <script>
     // Modal Functionality
-    const modal = document.getElementById('signup-modal');
-    const modalBackdrop = document.getElementById('modal-backdrop');
-    const openModalButton = document.getElementById('open-signup-modal');
-    const closeModalButton = document.getElementById('close-modal');
-    const signupForm = document.getElementById('signup-form');
+    // const modal = document.getElementById('signup-modal');
+    // const modalBackdrop = document.getElementById('modal-backdrop');
+    // const openModalButton = document.getElementById('open-signup-modal');
+    // const closeModalButton = document.getElementById('close-modal');
+    // const signupForm = document.getElementById('signup-form');
     
-    // Store last focused element
-    let lastFocusedElement = null;
+    // // Store last focused element
+    // let lastFocusedElement = null;
     
     // Open modal function
     function openModal() {
