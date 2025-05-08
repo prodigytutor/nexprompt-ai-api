@@ -106,9 +106,8 @@ const RecentPrompts = () => {
               <Link href={`/dashboard/prompts/${prompt.id}/edit`} passHref>
                 <Button variant="default" size="sm">Edit</Button>
               </Link>
-              <Link href={`/dashboard/prompts/${prompt.id}/view`} passHref>
+              <Link href={`/dashboard/prompts/${prompt.id}`} passHref> {/* Corrected Link */}
                 <Button variant="secondary" size="sm">View/Test</Button> 
-                {/* Changed "outline" to "secondary" for visual difference */}
               </Link>
             </CardFooter>
           </Card>
