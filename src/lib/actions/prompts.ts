@@ -65,7 +65,7 @@ export async function createPrompt(data: createPromptData): Promise<Prompt> {
 }
 
 // Update an existing prompt
-export async function updatePrompt(promptId: string, userId: string, data: CreatePromptData): Promise<Prompt> {
+export async function updatePrompt(promptId: string, userId: string, data: createPromptData): Promise<Prompt> {
   await verifyPromptOwnership(promptId, userId);
 
   try {

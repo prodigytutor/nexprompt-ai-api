@@ -51,6 +51,7 @@ model Prompt {
   aiModel           String?
   versions          PromptVersion[]
   logs              AnalyticsLog[]
+  slug              String?
   url               String?
   customDomain      String?
   userId            String
@@ -70,12 +71,23 @@ model PromptVersion {
 }
 
 model ApiKey {
-  id        String   @id @default(cuid())
-  key       String   @unique
-  userId    String
-  createdAt DateTime @default(now())
-  expiresAt DateTime?
-}
+      id          String    @id @default(uuid())
+      hashedKey   String    @unique // Store hash of the actual key
+      prefix      String    @unique // e.g., 'sk_live_' - first few chars for identification
+      description String?
+      createdAt   DateTime  @default(now())
+      lastUsedAt  DateTime?
+      expiresAt   DateTime? // Optional expiration
+      isActive    Boolean   @default(true)
+
+      // Optional: Link to a User model
+       userId      String?
+       user        User?     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+      @@index([prefix])
+      @@index([hashedKey])
+     @@index([userId]) // Index if linking to users
+    }
 
 model AnalyticsLog {
   id          String   @id @default(cuid())
