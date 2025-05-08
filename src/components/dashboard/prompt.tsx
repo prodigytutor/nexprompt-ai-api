@@ -9,72 +9,97 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"; // Added CardDescription
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"; // Added Tooltip components
 import {
-  DownloadIcon,
-  PauseIcon,
-  PenIcon,
-  PlayIcon,
-  Volume2,
+  DownloadIcon, // Will be replaced
+  History, // Added History icon
+  PlusCircleIcon, 
+  // PauseIcon, PenIcon, PlayIcon, Volume2, 
 } from "lucide-react";
 import { Visualizer } from "@/components/dashboard/visualizer";
-import PromptList from "../prompt/PromptList";
+import RecentPrompts from "@/components/dashboard/RecentPrompts"; // Import RecentPrompts
 import Link from "next/link";
+import { NeonGradientCard } from "@/components/magicui/neon-gradient-card"; // Assuming path
 
 export const PromptDashboard = () => {
-  const [selectedVoice, setSelectedVoice] = useState<string>("");
-  const [inputText, setInputText] = useState<string>("");
-  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  // const [selectedVoice, setSelectedVoice] = useState<string>(""); // State for TTS, keep if Visualizer needs it
+  // const [inputText, setInputText] = useState<string>(""); // State for TTS
+  const [isPlaying, setIsPlaying] = useState<boolean>(false); // State for Visualizer
 
-  const voices = ["Morgan", "Zeke", "Amy", "Ava", "Caleb"];
+  // const voices = ["Morgan", "Zeke", "Amy", "Ava", "Caleb"]; // For TTS, keep if needed
 
-  const handleGenerate = () => {
+  // This function seems to be a generic toggle for the visualizer,
+  // not specifically for prompt generation from the button's context anymore.
+  // If it's just for the visualizer, its name could be more specific, or it can be removed if not tied to new UI.
+  const toggleVisualizer = () => {
     setIsPlaying(!isPlaying);
   };
 
   return (
-    <>
-      <Card className="mx-auto border-none shadow-none  ">
-        <CardHeader>
-          <CardTitle className="text-3xl font-bold">
-           Prompting Dashboard
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="mt-6">
-            <div className="border border-2 rounded-lg  items-center justify-center">
-              <div className="flex justify-between">
-                <div className="flex justify-start gap-4">
-                  
-                  <Button className="mt-5">
-                    Execution History
-                    <DownloadIcon className="ml-2 h-4 w-4" />
-                  </Button>
-                </div>
+    <div className="p-4 md:p-6 space-y-8">
+      {/* Header Section */}
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
+        <h1 className="text-3xl font-bold">Prompting Dashboard</h1>
+        <Link href="/dashboard/prompts/builder" passHref>
+          <Button size="lg">
+            <PlusCircleIcon className="mr-2 h-5 w-5" /> Create New Prompt
+          </Button>
+        </Link>
+      </div>
 
-                <p className="m-5 text-2xl font-semibold">
-                  {!isPlaying ? "Click Play To Start" : "Playing Your Story"}
+      {/* Main Interactive Tool Section (Visualizer) - Enhanced with NeonGradientCard */}
+      <NeonGradientCard className="p-0"> {/* Apply padding control if NeonGradientCard adds its own */}
+        <Card className="bg-transparent border-none"> {/* Make inner card transparent if NeonGradientCard provides the background/border */}
+          <CardHeader className="flex flex-row justify-between items-center pb-2">
+            <div>
+              <CardTitle className="text-2xl">Audio Visualizer Demo</CardTitle>
+              <CardDescription className="mt-1">
+                Experience a demonstration of our audio processing capabilities.
+              </CardDescription>
+            </div>
+            <Button variant="outline" onClick={toggleVisualizer} className="ml-4">
+              {isPlaying ? "Pause Visualizer" : "Play Visualizer Demo"}
+            </Button>
+          </CardHeader>
+          <CardContent className="pt-4">
+            <div className="border-2 rounded-lg p-4 items-center justify-center">
+              <div className="flex justify-between items-center mb-3">
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button variant="secondary">
+                        <History className="mr-2 h-4 w-4" />
+                        History
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>View past audio generation activity (feature pending).</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <p className="text-xl font-semibold">
+                  {!isPlaying ? "Click Play To Start Demo" : "Visualizer Active"}
                 </p>
               </div>
               <Visualizer isAnimating={isPlaying} />
             </div>
-          </div>
-          <div className="space-y-6 mt-8">
-            <PromptList />
+          </CardContent>
+        </Card>
+      </NeonGradientCard>
 
-            <div className="flex justify-end gap-4">
-              <Link href="/dashboard/prompts/builder">
-              <Button onClick={handleGenerate}>
-                <Volume2 className="mr-2 h-4 w-4" /> New Prompt
-              </Button>
-              </Link>
-              <Button onClick={handleGenerate}>
-                <PenIcon className="mr-2 h-4 w-4" /> Spare Button #1
-              </Button>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </>
+      {/* Recent Prompts Section */}
+      <section>
+        <RecentPrompts />
+      </section>
+
+      {/* 
+        The old PromptList is removed from here. 
+        Navigation to the full list is handled by the "View All Prompts" button within RecentPrompts.
+        The old "Spare Button #1" is removed.
+        The "New Prompt" button is moved to the top as a primary action.
+      */}
+      
+    </div>
   );
 };
