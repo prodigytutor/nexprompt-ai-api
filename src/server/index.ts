@@ -1,5 +1,6 @@
 import { publicProcedure, router } from "@/server/trpc";
 import { z } from "zod";
+import { promptRouter } from './routes/promptRoutes'; // Added import
 
 const userSchema = z.object({
   name: z.string(),
@@ -12,6 +13,7 @@ const userSchema = z.object({
  * Customize routes according to your needs
  */
 export const appRouter = router({
+  // User-related procedures (placeholders)
   createUser: publicProcedure.query(async () => {
     return "User Created";
   }),
@@ -21,6 +23,9 @@ export const appRouter = router({
   getUser: publicProcedure.query(async () => {
     return "Get User";
   }),
+
+  // Prompt-related procedures
+  prompts: promptRouter, // Added promptRouter
 });
 
 export type AppRouter = typeof appRouter;

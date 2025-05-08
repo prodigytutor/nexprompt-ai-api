@@ -1,64 +1,63 @@
 "use client";
-import { PromptData } from '@/lib/types';
 import React from 'react';
-
-
+import { trpc } from '@/app/_trpc/client'; // Import tRPC client
+import Link from 'next/link'; // Import Link for navigation
+import type { Prompt } from '../../../generated/prisma/client'; // Using Prisma type
 
 const PromptList = () => {
-  const [prompts, setPrompts] = React.useState<PromptData[] | null>(null);
-  const [loading, setLoading] = React.useState(true);
-  const [error, setError] = React.useState<string | null>(null);  
+  // Fetch prompts using tRPC
+  const { data: prompts, isLoading, error, refetch: refetchPrompts } = trpc.prompts.listPrompts.useQuery(undefined, {
+    // `undefined` as input because listPrompts doesn't take any input
+    // Add any options like `staleTime`, `cacheTime` if needed
+  });
+  
+  // TODO: Implement delete functionality with tRPC mutation
+  const handleDelete = async (id: string) => {
+    console.log('Attempting to delete prompt with id:', id);
+    // Example: await deletePromptMutation.mutateAsync({ promptId: id });
+    // For now, just refetching to simulate change if deletion was successful elsewhere or for optimistic updates.
+    // Ideally, you'd call a delete mutation and then refetch or update cache.
+    alert("Delete functionality not fully implemented. Refetching list.");
+    refetchPrompts(); 
+  };
 
-  React.useEffect(() => {
-    const fetchPrompts = async () => {
-      try {
-        console.log("Prompt List", "In useEffect")
-        const response = await fetch('/api/prompts');
-        console.log("Response", response)
-        if (!response.ok) {
-          throw new Error('Failed to fetch prompts');
-        }
-        const data = await response.json();
-        setPrompts(data);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'An unknown error occurred');
-      } finally {
-        setLoading(false);
-      }
-    };
+  if (isLoading) {
+    return <div className="p-4">Loading prompts...</div>;
+  }
 
-    fetchPrompts();
-  }, []);
-  function handleEdit(prompt: PromptData) {
-    // Handle edit logic here
-    console.log('Edit prompt:', prompt);
-  }
-  function handleDelete(id: string) {
-    // Handle delete logic here
-    console.log('Delete prompt with id:', id);
-    setPrompts((prev) => prev?.filter((p) => p.id !== id) || null);
-  }
-  if (loading) {
-    return <div className="p-2">Loading...</div>;
-  }
   if (error) {
-    return <div className="p-2 text-red-500">Error: {error}</div>;
+    return <div className="p-4 text-red-600">Error fetching prompts: {error.message}</div>;
   }
+
   if (!prompts || prompts.length === 0) {
-    return <div className="p-2">No prompts available.</div>;
+    return <div className="p-4">No prompts available. Create one!</div>;
   }
+
   return (
-    <div className="p-2">
-      <h2 className="text-xl font-bold mb-2">All Prompts</h2>
-      {prompts && prompts.map((p) => (
-        <div key={p.id} className="border p-2 mb-2 rounded flex justify-between">
+    <div className="p-4 space-y-3">
+      <h2 className="text-2xl font-semibold mb-4">Your Prompts</h2>
+      {prompts.map((p: Prompt) => ( // Explicitly type `p` if not inferred correctly
+        <div key={p.id} className="border border-gray-300 p-4 mb-3 rounded-lg shadow-sm hover:shadow-md transition-shadow flex justify-between items-center">
           <div>
-            <div className="font-semibold">{p.name}</div>
-            <div className="text-sm text-gray-600">{p.promptText.slice(0, 50)}...</div>
+            <h3 className="text-xl font-medium text-blue-600">{p.name}</h3>
+            <p className="text-sm text-gray-700 mt-1">
+              {p.description ? `${p.description.slice(0, 100)}${p.description.length > 100 ? '...' : ''}` : (p.promptText ? `${p.promptText.slice(0,100)}${p.promptText.length > 100 ? '...' : ''}`: 'No description or text.')}
+            </p>
+            <p className="text-xs text-gray-500 mt-2">Model: {p.aiProvider} / {p.aiModel}</p>
+            <p className="text-xs text-gray-500">Updated: {new Date(p.updatedAt).toLocaleDateString()}</p>
           </div>
-          <div className="flex gap-2">
-            <button className="border rounded px-2" onClick={() => handleEdit(p)}>Edit</button>
-            <button className="border rounded px-2" onClick={() => handleDelete(p.id)}>Delete</button>
+          <div className="flex flex-col sm:flex-row gap-2 items-center">
+            <Link href={`/dashboard/prompts/${p.id}/edit`} passHref>
+              <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-sm transition-colors text-sm">
+                Edit
+              </button>
+            </Link>
+            <button 
+              onClick={() => handleDelete(p.id)} 
+              className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-md shadow-sm transition-colors text-sm"
+            >
+              Delete
+            </button>
           </div>
         </div>
       ))}
